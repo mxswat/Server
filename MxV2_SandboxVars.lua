@@ -577,33 +577,151 @@ SandboxVars = {
         RallyGroupRadius = 10,
     },
     BecomeDesensitized = {
-        -- Minimum=1 Maximum=10000 Default=500
+        -- Minimum zombie kills required to have a chance to become desensitized. Minimum=1 Maximum=10000 Default=500
         MinimumZombieKills = 500,
-        -- Minimum=1 Maximum=10000 Default=2000
+        -- Maximum zombie kills required to become desensitized Minimum=1 Maximum=10000 Default=2000
         MaximumZombieKills = 2000,
+        -- Consider traits that can increase the chance of becoming desensitized (more info in workshop page)
         ConsiderTraits = true,
+        -- Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized
         ConsiderOccupations = true,
     },
     Firearms = {
+        -- With this activated improvised will not break no matter what the break chance is.
         SuppressorBreak = true,
+        -- Whether or not a screwdriver is required to put attachments on firearms.
         ScrewdriverReq = false,
+        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default=One Use
+        -- 1 = One Use
+        -- 2 = High
+        -- 3 = Medium
         BottleSuppressorBreakChance = 1,
+        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default=High
+        -- 1 = One Use
+        -- 2 = High
+        -- 3 = Medium
         FlashlightSuppressorBreakChance = 2,
+        -- How effective a suppressor is on a firearm that uses .22 LR rounds. Default=80%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectiveness22 = 3,
+        -- How effective a suppressor is on a firearm that uses 9mm rounds. Default=70%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectiveness9mm = 4,
+        -- How effective a suppressor is on a firearm that uses .45 ACP rounds. Default=70%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectiveness45 = 4,
+        -- How effective a suppressor is on a firearm that uses .44 Magnum rounds. Default=70%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectiveness44 = 4,
+        -- How effective a suppressor is on a firearm that uses .38 Special rounds. Default=80%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectiveness38 = 3,
+        -- How effective a suppressor is on a firearm that uses .223 and 5.56x45mm rounds. Default=60%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectiveness223 = 5,
+        -- How effective a suppressor is on a firearm that uses .308 and 7.62x51mm rounds. Default=50%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectiveness308 = 6,
+        -- How effective a suppressor is on shotgun. Default=30%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectivenessShotgunShells = 8,
+        -- How effective improvised suppressors are, on top of the effectiveness based on caliber. Default=20%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectivenessImprovised = 9,
+        -- How effective suppressors are on revolvers are, on top of the effectiveness based on caliber. Default=60%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
         SuppressorEffectivenessRevolver = 5,
+        -- Whether or not any suppressors can be found in the world.
         SpawnSuppressors = true,
+        -- Whether or not handgun suppressors(9mm, .45 ACP) can be found in the world.
         SpawnHandgunSuppressors = true,
+        -- Whether or not rifle suppressors(.22 LR, .223/5.56x45mm, and .308/7.62x51mm) can be found in the world.
         SpawnRifleSuppressors = true,
+        -- Whether or not shotgun suppressors can be found in the world.
         SpawnShotgunSuppressors = true,
+        -- Whether or not .38 Special & .357 caliber suppressors can be found in the world.
         SpawnRevolverSuppressors = true,
+        -- Whether or not Ammo Cases can be found in containers.
         SpawnAmmoCans = true,
         -- Default=Rare
         -- 1 = Extremely Rare
@@ -613,129 +731,494 @@ SandboxVars = {
         LootSuppressor = 2,
     },
     MoreTraits = {
-        -- Minimum=1 Maximum=999 Default=4
+        -- The amount of bandages given by the Prepare Medical trait. Minimum=1 Maximum=999 Default=4
         PreparedMedicalBandageAmount = 4,
+        -- Players who choose the Prepared: Cars trait start with a gas can.
         PreparedCarGasToggle = true,
+        -- Whether or not players who take the Injured trait can receive burns as a random injury.
+        -- Burns can be extremely debilitating especially if on the legs.
         InjuredBurns = true,
+        -- Players who take the Alcoholic trait start with a free bottle of alcohol.
         AlcoholicFreeDrink = true,
         SmokerStart = true,
-        -- Minimum=0 Maximum=200 Default=100
+        -- The percent degree to which Lucky and Unlucky traits affect traits from this mod.
+        -- 0% means lucky and unlucky have no effect on traits. Minimum=0 Maximum=200 Default=100
         LuckImpact = 100,
-        -- Minimum=1 Maximum=720 Default=24
+        -- How many hours (on average) should an alcoholic need to drink to sate their need?
+        -- Lower values mean Alcoholics need to drink frequently to avoid withdrawal. Minimum=1 Maximum=720 Default=24
         AlcoholicFrequency = 24,
-        -- Minimum=1 Maximum=720 Default=72
+        -- After how many hours without alcohol should an alcoholic start suffering withdrawal symptoms?
+        -- This value should be higher than Alcoholic Drink Frequency. Minimum=1 Maximum=720 Default=72
         AlcoholicWithdrawal = 72,
-        -- Minimum=0 Maximum=90 Default=75
+        -- The percent value that XP is reduced by for those who take a Specialization trait.
+        -- Set to 0% to disable XP reduction. Minimum=0 Maximum=90 Default=75
         SpecializationXPPercent = 75,
-        -- Minimum=1 Maximum=100 Default=5
+        -- The percent chance that a player who has the Bouncer trait will trigger its effect.
+        -- This is rolled every tick, so 60 times/second for as long as the player has at least two or more zombies near them.
+        -- Increasing this value by even a small amount can dramatically overpower Bouncer. Minimum=1 Maximum=100 Default=5
         BouncerEffectiveness = 5,
-        -- Minimum=1 Maximum=240 Default=60
+        -- How many ticks between Bouncer shoves.
+        -- 60 ticks = 1 second
+        -- Reducing this value can dramatically overpower Bouncer. Minimum=1 Maximum=240 Default=60
         BouncerCooldown = 60,
-        -- Minimum=0.25 Maximum=5.00 Default=1.75
+        -- The distance (in tile squares) from the player out to which Bouncer begins attempting to shove enemies away. 
+        -- Lower values means Bouncer will take effect only at closer ranges to the player. Minimum=0.25 Maximum=5.00 Default=1.75
         BouncerDistance = 1.75,
-        -- Minimum=100 Maximum=1000 Default=200
+        -- The percent amount extra Fitness/Strength XP a player receives from working out if they have the Gym Goer trait.
+        -- Setting this to 100% means no extra XP is gained. Minimum=100 Maximum=1000 Default=200
         GymGoerPercent = 200,
+        -- Should Gym Goer eliminate exercise fatigue?
+        -- If this option is un-checked, players with Gym Goer will suffer from exercise fatigue as normal.
         GymGoerNoExerciseFatigue = true,
-        -- Minimum=1 Maximum=30 Default=7
+        -- After how many in-game days should the indefatigable ability recharge? Minimum=1 Maximum=30 Default=7
         IndefatigableRecharge = 7,
+        -- Should Indefatigable cure infection upon being used?
+        -- By default, Indefatigable does not cure zombification.
+        -- Note: Curing infection with Indefatigable will put it on twice the cooldown than normal.
         IndefatigableCuresInfection = false,
+        -- Should Indefatigable no longer cure infection if it cured once?
+        -- This setting only works if "Indefatigable Cures Infection" is turned on.
         IndefatigableCuresInfectionOnce = false,
-        -- Minimum=0 Maximum=1000 Default=100
+        -- A percent value representing how effective the Gordanite trait makes players with Crowbars.
+        -- Setting this to 200% will make Gordanite twice as powerful. Minimum=0 Maximum=1000 Default=100
         GordaniteEffectiveness = 100,
-        -- Minimum=25 Maximum=1000 Default=100
+        -- A percent value representing how strong the scaling in damage for Martial Artist is.
+        -- Setting this to 50% would halve all damage. Minimum=25 Maximum=1000 Default=100
         MartialScaling = 100,
-        -- Minimum=0 Maximum=100 Default=33
+        -- The percent chance that a player with the Evasive trait will dodge an attack.
+        -- Setting this to 100% will make players with Evasive immune to zombies. Minimum=0 Maximum=100 Default=33
         EvasiveChance = 33,
-        -- Minimum=100 Maximum=10000 Default=2000
+        -- The chance in X how frequently a player with Butterfingers will drop an item.
+        -- The base chance is 5, so by default this value would be a 5/2000 chance calculated every in-game minute.
+        -- Lowering this value could result in players constantly dropping their items. Minimum=100 Maximum=10000 Default=2000
         ButterfingersChance = 2000,
-        -- Minimum=1 Maximum=1000 Default=10
+        -- The chance that a player with the Grave Robber trait will find extra loot on a zombie corpse.
+        -- Setting this to 1000 will make every zombie killed by the player have extra loot. Minimum=1 Maximum=1000 Default=10
         GraveRobberChance = 10,
-        -- Minimum=0 Maximum=10 Default=1
+        -- How much guaranteed extra loot will Grave Robber's find on zombie corpses?
+        -- By default, a random value is determined. Increasing this value guarantees extra loot whenever loot is rolled. Minimum=0 Maximum=10 Default=1
         GraveRobberGuaranteedLoot = 1,
-        -- Minimum=1 Maximum=100 Default=20
+        -- A percent value representing the chance that a player with the Scrounger trait will find extra loot in any container.
+        -- 100% would make every container have extra loot. Minimum=1 Maximum=100 Default=20
         ScroungerChance = 20,
-        -- Minimum=1 Maximum=100 Default=10
+        -- A percent value representing how likely any item in a container is to be duplicated by Scrounger.
+        -- For example: Scrounger Chance is the percent chance that any given container will potentially have extra loot in it.
+        -- Once a container passes this initial check, another series of checks is run - for every single item inside that container, a die is rolled to determine if that item is duplicated.
+        -- If for instance, this value is set to 100%, then whenever Scrounger is triggered, the entire contents of that container will be duplicated.
+        -- If Scrounger Chance, and Scrounger Item Chance are both 100%, then anyone with the Scrounger trait will find double the loot in every container. Minimum=1 Maximum=100 Default=10
         ScroungerItemChance = 10,
-        -- Minimum=10 Maximum=1000 Default=30
+        -- A percent value representing how much extra loot players with the Scrounger trait will find when Scrounger triggers.
+        -- 100% would double the amount of extra loot players find.
+        -- This value always rounds up, so even a single item can potentially be doubled.
+        -- This effect is most noticed in stacks of items such as cigarettes or ammunition. Minimum=10 Maximum=1000 Default=30
         ScroungerLootModifier = 30,
-        -- Minimum=1 Maximum=100 Default=10
+        -- A percent value representing the chance that a player with the Incomprehensive trait will find fewer items in any container.
+        -- Setting this to 100% would make every container lose some items. Minimum=1 Maximum=100 Default=10
         IncomprehensiveChance = 10,
-        -- Minimum=1 Maximum=100 Default=33
+        -- A percent value representing the chance that a player with the Vagabond trait will find extra food in a garbage bin.
+        -- Setting this to 100% would make every trash bin contain extra food. Minimum=1 Maximum=100 Default=33
         VagabondChance = 33,
-        -- Minimum=0 Maximum=10 Default=1
+        -- How many extra food items is a player with the Vagabond trait guaranteed to find in a garbage bin?
+        -- By default, a random value between 0 and 2 is selected. This value adds to that range.
+        -- (eg; roll a random number between 0 and 2 and then add x, where x is this value.) Minimum=0 Maximum=10 Default=1
         VagabondGuaranteedExtraLoot = 1,
-        -- Minimum=1 Maximum=100 Default=10
+        -- Defines the base inventory carry capacity for those who take the Pack Mule trait.
+        -- This is the base value before applying bonuses from Strength. Minimum=1 Maximum=100 Default=10
         WeightPackMule = 10,
-        -- Minimum=1 Maximum=100 Default=6
+        -- Defines the base inventory carry capacity for those who take the Pack Mouse trait.
+        -- This is the base value before applying bonuses from Strength. Minimum=1 Maximum=100 Default=6
         WeightPackMouse = 6,
-        -- Minimum=1 Maximum=100 Default=8
+        -- Defines the base inventory carry capacity for players with neither Pack Mule nor Pack Mouse traits.
+        -- This is the base value before applying bonuses from Strength. Minimum=1 Maximum=100 Default=8
         WeightDefault = 8,
-        -- Minimum=-100 Maximum=100 Default=0
+        -- Gives bonus inventory carry capacity to all players.
+        -- You can set a negative value to reduce all player inventory capacity globally as well. Minimum=-100 Maximum=100 Default=0
         WeightGlobalMod = 0,
-        -- Minimum=1 Maximum=1000 Default=100
+        -- How much extra time is added to TimedActions being performed by players with the Quick Worker trait.
+        -- Higher values make TimedActions perform more rapidly.
+        -- This is a fine granular value with 100 translating to a 0.1 (10%) increase in speed. Minimum=1 Maximum=1000 Default=100
         QuickWorkerScaler = 100,
-        -- Minimum=5 Maximum=50 Default=15
+        -- How much longer it takes to perform TimedActions.
+        -- Higher values make TimedActions perform more slowly.
+        -- Setting this too high can make it excruciatingly slow to do any actions - especially reading books. Minimum=5 Maximum=50 Default=15
         SlowWorkerScaler = 15,
+        -- Limit the amount of free recipes granted by Ingenuitive?
+        -- By default, all recipes are taught for players who have Ingenuitive.
+        -- Turning this on allows you to limit how much they learn instead.
         IngenuitiveLimit = false,
-        -- Minimum=5 Maximum=95 Default=50
+        -- What percent of unknown recipes should be learned by Ingenuitive?
+        -- This is randomly chosen out of all available recipes. Minimum=5 Maximum=95 Default=50
         IngenuitiveLimitAmount = 50,
+        -- By default, Martial Artist will only deal damage if the player is unarmed.
+        -- If enabled, players' shoves will still deal damage even if they are wielding a weapon.
+        -- If this option is disabled, you can still benefit from Martial Artist with an item in your Secondary slot (Flashlight, Bag, etc). It only checks if the Primary slot is equipped.
         MartialWeapons = false,
-        -- Minimum=100 Maximum=10000 Default=1500
+        -- How rare Antique Collector items are.
+        -- This value is representative of a 1 in X roll.
+        -- Higher values mean drops happen less frequently. Minimum=100 Maximum=10000 Default=1500
         AntiqueChance = 1000,
+        -- If true, Antique Collector trait will be able to find antique items anywhere, instead of only in crates and metal shelves.
         AntiqueAnywhere = false,
+        -- Players who take the Deprived trait will still be allowed to keep a belt.
+        -- Belts are ordinarily difficult to obtain through normal play without killing other players or mods which add them to loot tables.
         ForgivingDeprived = true,
+        -- Players who take the alcoholic trait can never die from alcohol poisoning, but will still suffer periodic withdrawal.
         NonlethalAlcoholic = false,
-        -- Minimum=1 Maximum=30 Default=14
+        -- After how much days should Second Wind recharge? Minimum=1 Maximum=30 Default=14
         SecondWindCooldown = 14,
-        -- Minimum=10 Maximum=100 Default=50
+        -- How much extra endurance should hardy give?
+        -- Keep in mind, this value is the amount you get when reaching fitness 10. Minimum=10 Maximum=100 Default=50
         HardyEndurance = 50,
+        -- If this setting is on, Super Immune will not be able to defend your body if it caught several infections.
         SuperImmuneWeakness = false,
-        -- Minimum=0 Maximum=100 Default=25
+        -- Chance for a player with Immunocompromised to get infected by a zombie attack.
+        -- Setting this value to 100 will make every zombie attack infectious. Minimum=0 Maximum=100 Default=25
         ImmunoChance = 25,
     },
     BLTAnnotations = {
+        -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
         DropMapOnDeath = false,
     },
     SkillRecoveryJournal = {
-        -- Minimum=1 Maximum=100 Default=100
+        -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
         RecoveryPercentage = 100,
-        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
         TranscribeSpeed = 1.0,
-        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
         ReadTimeSpeed = 1.0,
+        -- Toggle on to record passive skills.
         RecoverPassiveSkills = false,
+        -- Toggle on to record combat skills.
         RecoverCombatSkills = true,
+        -- Toggle on to record firearm skills.
         RecoverFirearmSkills = true,
+        -- Toggle on to record crafting skills.
         RecoverCraftingSkills = true,
+        -- Toggle on to record survivalist skills.
         RecoverSurvivalistSkills = true,
+        -- Toggle on to record agility skills.
         RecoverAgilitySkills = true,
+        -- Toggle off to prevent journals from recovering/transcribing recipes.
         RecoverRecipes = true,
+        -- If toggled on XP that is transcribed is spent when read.
         RecoveryJournalUsed = false,
     },
     RewardingNightCombat = {
+        -- In the upper right there will be a moon icon indicating whether the bonuses are active or not.
         enableIndicator = true,
         draggableIndicator = false,
+        -- Default=Dark Cyan - Lime Green
+        -- 1 = Original
+        -- 2 = Bright Orange
+        -- 3 = Crimson
+        -- 4 = Cyan
+        -- 5 = Toxic Green
         indicatorColor = 6,
+        -- Suspenseful sound that plays when the Rewarding Night Combat event is triggered.
         enableTriggerSound = false,
-        -- Minimum=0 Maximum=100 Default=100
+        -- Probability that Rewarding Night Combat event is triggered. Value 100 means that event will trigger every day. Minimum=0 Maximum=100 Default=100
         triggerProbability = 100,
-        -- Minimum=0 Maximum=365 Default=0
+        -- The day the event will start triggering. Minimum=0 Maximum=365 Default=0
         startAfterXDays = 0,
+        -- The time when players will start receiving bonuses during the summer Default=11 PM / 23:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         startTimeSummer = 24,
+        -- The time when players will stop receiving bonuses during the summer Default=6 AM / 06:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         endTimeSummer = 7,
+        -- The time when players will start receiving bonuses during the autumn Default=11 PM / 23:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         startTimeAutumn = 24,
+        -- The time when players will stop receiving bonuses during the autumn Default=6 AM / 06:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         endTimeAutumn = 7,
+        -- The time when players will start receiving bonuses during the winter Default=11 PM / 23:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         startTimeWinter = 24,
+        -- The time when players will stop receiving bonuses during the winter Default=6 AM / 06:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         endTimeWinter = 7,
+        -- The time when players will start receiving bonuses during the spring Default=11 PM / 23:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         startTimeSpring = 24,
+        -- The time when players will stop receiving bonuses during the spring Default=6 AM / 06:00
+        -- 1 = 12 AM / 00:00
+        -- 2 = 1 AM / 01:00
+        -- 3 = 2 AM / 02:00
+        -- 4 = 3 AM / 03:00
+        -- 5 = 4 AM / 04:00
+        -- 6 = 5 AM / 05:00
+        -- 7 = 6 AM / 06:00
+        -- 8 = 7 AM / 07:00
+        -- 9 = 8 AM / 08:00
+        -- 10 = 9 AM / 09:00
+        -- 11 = 10 AM / 10:00
+        -- 12 = 11 AM / 11:00
+        -- 13 = 12 PM / 12:00
+        -- 14 = 1 PM / 13:00
+        -- 15 = 2 PM / 14:00
+        -- 16 = 3 PM / 15:00
+        -- 17 = 4 PM / 16:00
+        -- 18 = 5 PM / 17:00
+        -- 19 = 6 PM / 18:00
+        -- 20 = 7 PM / 19:00
+        -- 21 = 8 PM / 20:00
+        -- 22 = 9 PM / 21:00
+        -- 23 = 10 PM / 22:00
         endTimeSpring = 7,
+        -- Bonus XP multiplier for axes when used throughout the night. Vanilla means no bonus, whereas, for example, 1.5x gives 50% bonus. Default=1.5x
+        -- 1 = Vanilla
+        -- 2 = 1.1x
+        -- 3 = 1.15x
+        -- 4 = 1.25x
+        -- 5 = 1.5x
+        -- 6 = 1.75x
+        -- 7 = 2x
+        -- 8 = 2.5x
+        -- 9 = 3x
+        -- 10 = 4x
+        -- 11 = 5x
+        -- 12 = 7.5x
         axeBonusMultiplier = 5,
+        -- Bonus XP multiplier for long blunt weapons when used throughout the night. Vanilla means no bonus, whereas, for example, 1.5x gives 50% bonus. Default=1.5x
+        -- 1 = Vanilla
+        -- 2 = 1.1x
+        -- 3 = 1.15x
+        -- 4 = 1.25x
+        -- 5 = 1.5x
+        -- 6 = 1.75x
+        -- 7 = 2x
+        -- 8 = 2.5x
+        -- 9 = 3x
+        -- 10 = 4x
+        -- 11 = 5x
+        -- 12 = 7.5x
         longBluntBonusMultiplier = 5,
+        -- Bonus XP multiplier for short blunt weapons when used throughout the night. Vanilla means no bonus, whereas, for example, 1.5x gives 50% bonus. Default=1.75x
+        -- 1 = Vanilla
+        -- 2 = 1.1x
+        -- 3 = 1.15x
+        -- 4 = 1.25x
+        -- 5 = 1.5x
+        -- 6 = 1.75x
+        -- 7 = 2x
+        -- 8 = 2.5x
+        -- 9 = 3x
+        -- 10 = 4x
+        -- 11 = 5x
+        -- 12 = 7.5x
         shortBluntBonusMultiplier = 6,
+        -- Bonus XP multiplier for long blades when used throughout the night. Vanilla means no bonus, whereas, for example, 1.5x gives 50% bonus. Default=1.5x
+        -- 1 = Vanilla
+        -- 2 = 1.1x
+        -- 3 = 1.15x
+        -- 4 = 1.25x
+        -- 5 = 1.5x
+        -- 6 = 1.75x
+        -- 7 = 2x
+        -- 8 = 2.5x
+        -- 9 = 3x
+        -- 10 = 4x
+        -- 11 = 5x
+        -- 12 = 7.5x
         longBladeBonusMultiplier = 5,
+        -- Bonus XP multiplier for short blades when used throughout the night. Vanilla means no bonus, whereas, for example, 1.5x gives 50% bonus. Default=1.75x
+        -- 1 = Vanilla
+        -- 2 = 1.1x
+        -- 3 = 1.15x
+        -- 4 = 1.25x
+        -- 5 = 1.5x
+        -- 6 = 1.75x
+        -- 7 = 2x
+        -- 8 = 2.5x
+        -- 9 = 3x
+        -- 10 = 4x
+        -- 11 = 5x
+        -- 12 = 7.5x
         shortBladeBonusMultiplier = 6,
+        -- Bonus XP multiplier for spears when used throughout the night. Vanilla means no bonus, whereas, for example, 1.5x gives 50% bonus. Default=1.5x
+        -- 1 = Vanilla
+        -- 2 = 1.1x
+        -- 3 = 1.15x
+        -- 4 = 1.25x
+        -- 5 = 1.5x
+        -- 6 = 1.75x
+        -- 7 = 2x
+        -- 8 = 2.5x
+        -- 9 = 3x
+        -- 10 = 4x
+        -- 11 = 5x
+        -- 12 = 7.5x
         spearBonusMultiplier = 5,
+        -- When aiming level is 4 or higher, the game nerfs experience gains; if this option is true, bonus experiences will not be affected by the nerf.
         ignoreAimingXPNerf = true,
+        -- Bonus XP multiplier for ranged weapons when used throughout the night. Vanilla means no bonus, whereas, for example, 1.5x gives 50% bonus. Default=1.5x
+        -- 1 = Vanilla
+        -- 2 = 1.1x
+        -- 3 = 1.15x
+        -- 4 = 1.25x
+        -- 5 = 1.5x
+        -- 6 = 1.75x
+        -- 7 = 2x
+        -- 8 = 2.5x
+        -- 9 = 3x
+        -- 10 = 4x
+        -- 11 = 5x
+        -- 12 = 7.5x
         aimingBonusMultiplier = 5,
     },
 }
