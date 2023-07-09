@@ -4,7 +4,5 @@ function SpawnRegions()
 		{ name = "Riverside, KY", file = "media/maps/Riverside, KY/spawnpoints.lua" },
 		{ name = "Rosewood, KY", file = "media/maps/Rosewood, KY/spawnpoints.lua" },
 		{ name = "West Point, KY", file = "media/maps/West Point, KY/spawnpoints.lua" },
-		{ name = "FortRedstone", file = "media/maps/FortRedstone/spawnpoints.lua" },
-		{ name = "vehicle_interior", file = "media/maps/vehicle_interior/spawnpoints.lua" },
 	}
 end
