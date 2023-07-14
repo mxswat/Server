@@ -615,22 +615,16 @@ SandboxVars = {
         RallyGroupRadius = 5,
     },
     Casualoid = {
-        RemoveAsthmatic = true,
-        RemoveDeaf = true,
-        RemoveSundayDriver = true,
-        RemoveHardOfHearing = true,
-        RemoveDisorganized = true,
-        RemoveIlliterate = true,
-        RemoveClumsy = true,
-        RemoveNutritionist = true,
-        RemoveHerbalist = true,
-        RemoveAllThumbs = true,
-        -- Minimum=0 Maximum=100 Default=50
+        -- 50 means 50%, which means every action will be 50% faster, if you use 100% actions will be instantaneous, if you use 0% they won't be speed up Minimum=0 Maximum=100 Default=50
         FasterActionsModifier = 50,
-        -- Minimum=0 Maximum=100 Default=40
+        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
         WoodWeightModifier = 40,
-        -- Minimum=0 Maximum=100 Default=40
+        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
         MetalWeightModifier = 40,
+        -- Select a trait to disable it
+        MultiSelectDisablePositiveTraits = "Nutritionist;Herbalist;",
+        -- Select a trait to disable it
+        MultiSelectDisableNegativeTraits = "HardOfHearing;Clumsy;Asthmatic;Illiterate;Deaf;",
     },
     ExpandedHeli = {
         -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
@@ -1496,7 +1490,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber12gShot = 6,
+        EnumCaliber12gShot = 8,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -2221,7 +2215,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumGUNRollAMMO = 2,
+        EnumGUNRollAMMO = 3,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -2257,7 +2251,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumLEORollAMMO = 2,
+        EnumLEORollAMMO = 3,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -2293,7 +2287,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumMILRollAMMO = 2,
+        EnumMILRollAMMO = 3,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -2329,7 +2323,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumSECRollAMMO = 2,
+        EnumSECRollAMMO = 3,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -2365,7 +2359,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumSURRollAMMO = 2,
+        EnumSURRollAMMO = 3,
         -- Roll
         --  - Each Roll gives every item on the list a chance to spawn
         --  - Each Additional Roll gives each item another chance to spawn
@@ -2401,7 +2395,7 @@ SandboxVars = {
         -- 2 = 2
         -- 3 = 3
         -- 4 = 4
-        EnumHNTRollAMMO = 2,
+        EnumHNTRollAMMO = 3,
         -- Default=2
         -- 1 = 1
         -- 2 = 2
@@ -2589,5 +2583,40 @@ SandboxVars = {
         BoolHNTammo = true,
         -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Surplus Location containers
         BoolSURammo = true,
+    },
+    SkillRecoveryJournal = {
+        -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
+        RecoveryPercentage = 75,
+        -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
+        TranscribeSpeed = 1.0,
+        -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
+        ReadTimeSpeed = 1.0,
+        -- Starting with more than 1 point in a skill generally nets you bonus XP - with this toggled off that XP is not recorded. All XP recorded is that of a character with no starting skills. This does NOT recover starting levels - only the bonus XP earned.
+        RecoverProfessionAndTraitsBonuses = false,
+        -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
+        TranscribeTVXP = false,
+        -- Toggle on to record passive skills.
+        RecoverPassiveSkills = false,
+        -- Toggle on to record combat skills.
+        RecoverCombatSkills = true,
+        -- Toggle on to record firearm skills.
+        RecoverFirearmSkills = true,
+        -- Toggle on to record crafting skills.
+        RecoverCraftingSkills = true,
+        -- Toggle on to record survivalist skills.
+        RecoverSurvivalistSkills = true,
+        -- Toggle on to record agility skills.
+        RecoverAgilitySkills = true,
+        -- Toggle off to prevent journals from recovering/transcribing recipes.
+        RecoverRecipes = true,
+        -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
+        RecoveryJournalUsed = false,
+        Craftable = true,
+    },
+    VehicleRecycling = {
+        -- The following parts must be uninstalled before dismantling: hood, trunk lid, doors, windows, seats.
+        UninstallParts = false,
+        -- Minimum=1 Maximum=100 Default=1
+        ActionTimeMultiplier = 1,
     },
 }
