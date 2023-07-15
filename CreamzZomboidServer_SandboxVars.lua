@@ -625,6 +625,7 @@ SandboxVars = {
         MultiSelectDisablePositiveTraits = "Nutritionist;Herbalist;",
         -- Select a trait to disable it
         MultiSelectDisableNegativeTraits = "AllThumbs;SundayDriver;Illiterate;HardOfHearing;Deaf;Clumsy;Asthmatic;",
+        CanCraftStorageUpgrade = true,
     },
     ExpandedHeli = {
         -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
