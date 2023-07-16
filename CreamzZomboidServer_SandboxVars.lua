@@ -303,7 +303,7 @@ SandboxVars = {
     -- How often zombie attracting metagame events like distant gunshots will occur. Default=Sometimes
     -- 1 = Never
     -- 2 = Sometimes
-    MetaEvent = 2,
+    MetaEvent = 3,
     -- Governs night-time metagame events during the player's sleep. Default=Never
     -- 1 = Never
     -- 2 = Sometimes
@@ -604,7 +604,7 @@ SandboxVars = {
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
         RedistributeHours = 12.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
-        FollowSoundDistance = 300,
+        FollowSoundDistance = 500,
         -- The size of groups real zombies form when idle. Zero means zombies don't form groups. Groups don't form inside buildings or forest zones. Minimum=0 Maximum=1000 Default=20
         RallyGroupSize = 100,
         -- The distance real zombies travel to form groups when idle. Minimum=5 Maximum=50 Default=20
@@ -613,6 +613,20 @@ SandboxVars = {
         RallyGroupSeparation = 15,
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 5,
+    },
+    Bicycles = {
+        -- Determines whether your character will get tired as they pedal. 
+        Exhaustion = true,
+        -- Minimum=0.00 Maximum=1.00 Default=0.39
+        ExhaustionDrain = 0.39,
+        -- Determines whether your character will receive fitness exp as they pedal. 
+        FitnessExperience = true,
+        -- Minimum=0 Maximum=500 Default=15
+        FitnessExpGain = 15,
+        -- Determines whether your character will warm up from pedaling. 
+        Warmth = true,
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
+        WarmthGain = 0.1,
     },
     Casualoid = {
         -- 50 means 50%, which means every action will be 50% faster, if you use 100% actions will be instantaneous, if you use 0% they won't be speed up Minimum=0 Maximum=100 Default=50
@@ -626,6 +640,14 @@ SandboxVars = {
         -- Select a trait to disable it
         MultiSelectDisableNegativeTraits = "AllThumbs;SundayDriver;Illiterate;HardOfHearing;Deaf;Clumsy;Asthmatic;",
         CanCraftStorageUpgrade = true,
+    },
+    CommonSense = {
+        -- Toggles whether Players can pry open doors, windows, etc. using a Crowbar. 
+        PryingMechanic = true,
+        -- Displays the icon for Battery and Engine in vehicle dashboards in various colors depending on their condition. 
+        PartsHighlighter = true,
+        -- Toggles friendly colors for those affected by color blindness. 
+        ColorFilter = false,
     },
     ExpandedHeli = {
         -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
