@@ -614,2030 +614,261 @@ SandboxVars = {
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 5,
     },
+    A26 = {
+        EnumDebugLevels = 2,
+        EnumShowWeaponInfo = 1,
+        BoolSkipRemovals = false,
+        BoolVisualEffects = true,
+        BoolShowHitDamage = false,
+        BoolShowHitRange = false,
+        BoolDisplayAmmoCounter = true,
+        BoolDisplayMovementGauge = true,
+        EnumEjectSpentCasings = 11,
+        EnumEmergencyReload = 2,
+        EnumAutoMagType = 1,
+        EnumNVControl = 2,
+        EnumAutoToggleLaser = 1,
+        EnumLightRunTime = 6,
+        EnumTorchBurnTime = 5,
+        EnumTorchIgniteTarget = 5,
+        BoolAutoThrown = false,
+        BoolLightSaberReal = false,
+        EnumFixedWeaponOffset = 6,
+        BoolDynamicRecoilSystem = true,
+        EnumDynamicRangeSystem = 1,
+        BoolResetSightPicture = true,
+        BoolVehiclePenalty = false,
+        BoolFireArmsNeverBreak = false,
+        EnumFirearmJam = 4,
+        EnumAttachementsBreakOnMelee = 5,
+        EnumAttachmentsBreakOnFire = 5,
+        EnumArrowBreak = 5,
+        EnumArcheryDamage = 6,
+        EnumFirearmDamage = 6,
+        EnumMeleeDamage = 6,
+        EnumLauncherRangeMultiplier = 1,
+        EnumHeavyWeaponMovement = 1,
+        BoolZombieBodyParts = false,
+        EnumSoundSuppression = 3,
+        EnumSoundLinearBase = 1,
+        BoolUseVanillaShotSounds = false,
+        EnumTypeBOW = 6,
+        EnumTypeFLAME = 2,
+        EnumTypeGREN = 3,
+        EnumTypeMINI = 2,
+        EnumTypeLMG = 4,
+        EnumTypeSEMI = 6,
+        EnumTypeAUTO = 6,
+        EnumTypeSMG = 6,
+        EnumTypeLEVER = 3,
+        EnumTypeREV = 4,
+        EnumTypePUMP = 5,
+        EnumTypeBOLT = 4,
+        EnumTypeBREAK = 3,
+        EnumOriginUSA = 11,
+        EnumOriginSOV = 11,
+        EnumOriginKOR = 11,
+        EnumOriginPAC = 11,
+        EnumOriginCZE = 11,
+        EnumOriginEUR = 11,
+        EnumOriginISR = 11,
+        EnumOriginREST = 11,
+        EnumCaliber50BMG = 6,
+        EnumCaliber4gShot = 2,
+        EnumCaliber10gShot = 2,
+        EnumCaliber12gShot = 8,
+        EnumCaliber20gShot = 2,
+        EnumCaliber3006SPG = 4,
+        EnumCaliber308WIN = 5,
+        EnumCaliber762x54mmR = 4,
+        EnumCaliber545x39mm = 5,
+        EnumCaliber762x39mm = 6,
+        EnumCaliber556x45mm = 6,
+        EnumCaliber223REM = 4,
+        EnumCaliber45LC410g = 3,
+        EnumCaliber4570 = 3,
+        EnumCaliber44MAG = 4,
+        EnumCaliber45ACP = 6,
+        EnumCaliber38SPC = 5,
+        EnumCaliber9mm = 6,
+        EnumCaliber57x28mm = 4,
+        EnumCaliber380ACP = 5,
+        EnumCaliber22LR = 6,
+        EnumCaliber177BB = 6,
+        EnumAttachementSuppressor = 2,
+        EnumAttachementOptics = 2,
+        EnumAttachementLightLaser = 2,
+        EnumAttachementAllOther = 2,
+        EnumAmmoCan = 2,
+        EnumAmmoBox = 6,
+        EnumPolyCan = 2,
+        EnumStdMag = 4,
+        EnumExtMag = 3,
+        EnumDrumMag = 2,
+        EnumMeleeKnifeLarge = 3,
+        EnumMeleeKnifeSmall = 4,
+        EnumMeleeSword = 2,
+        EnumMeleeAxe = 3,
+        EnumMeleeBlunt = 4,
+        EnumMeleeSpear = 2,
+        EnumPowerTool = 11,
+        EnumReloadingItems = 4,
+        EnumRandomCases = 2,
+        EnumZombieCCW = 2,
+        EnumVLR = 11,
+        EnumArmor = 6,
+        EnumPost1992Production = 5,
+        EnumMILRegion = 8,
+        EnumCIVxLEO = 1,
+        EnumCIVxMIL = 1,
+        EnumLEOxCIV = 1,
+        EnumLEOxMIL = 1,
+        EnumMILxNON = 1,
+        EnumSECxNON = 1,
+        EnumHNTxNON = 1,
+        EnumSURxNON = 1,
+        EnumGUNRollGUN = 2,
+        EnumGUNRollAMMO = 3,
+        EnumGUNRollPART = 2,
+        EnumGUNRollARMOR = 2,
+        EnumLEORollGUN = 2,
+        EnumLEORollAMMO = 3,
+        EnumLEORollPART = 2,
+        EnumLEORollARMOR = 2,
+        EnumMILRollGUN = 2,
+        EnumMILRollAMMO = 3,
+        EnumMILRollPART = 2,
+        EnumMILRollARMOR = 2,
+        EnumSECRollGUN = 2,
+        EnumSECRollAMMO = 3,
+        EnumSECRollPART = 2,
+        EnumSECRollARMOR = 2,
+        EnumSURRollGUN = 2,
+        EnumSURRollAMMO = 3,
+        EnumSURRollPART = 2,
+        EnumSURRollARMOR = 2,
+        EnumHNTRollGUN = 2,
+        EnumHNTRollAMMO = 3,
+        EnumHNTRollPART = 2,
+        EnumHNTRollARMOR = 2,
+        EnumCIVx = 1,
+        EnumLEOx = 5,
+        EnumMILx = 1,
+        EnumSECx = 1,
+        EnumHNTx = 7,
+        EnumSURx = 3,
+        BoolCIVammo = true,
+        BoolLEOammo = true,
+        BoolMILammo = true,
+        BoolSECammo = true,
+        BoolHNTammo = true,
+        BoolSURammo = true,
+    },
     Bicycles = {
-        -- Determines whether your character will get tired as they pedal. 
         Exhaustion = true,
         -- Minimum=0.00 Maximum=1.00 Default=0.39
         ExhaustionDrain = 0.39,
-        -- Determines whether your character will receive fitness exp as they pedal. 
         FitnessExperience = true,
         -- Minimum=0 Maximum=500 Default=15
         FitnessExpGain = 15,
-        -- Determines whether your character will warm up from pedaling. 
         Warmth = true,
         -- Minimum=0.00 Maximum=1.00 Default=0.10
         WarmthGain = 0.1,
     },
     Casualoid = {
-        -- 50 means 50%, which means every action will be 50% faster, if you use 100% actions will be instantaneous, if you use 0% they won't be speed up Minimum=0 Maximum=100 Default=50
+        -- Minimum=0 Maximum=100 Default=50
         FasterActionsModifier = 50,
-        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
+        -- Minimum=0 Maximum=100 Default=40
         WoodWeightModifier = 40,
-        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
+        -- Minimum=0 Maximum=100 Default=40
         MetalWeightModifier = 40,
-        -- Select a trait to disable it
         MultiSelectDisablePositiveTraits = "Nutritionist;Herbalist;",
-        -- Select a trait to disable it
         MultiSelectDisableNegativeTraits = "AllThumbs;SundayDriver;Illiterate;HardOfHearing;Deaf;Clumsy;Asthmatic;",
         CanCraftStorageUpgrade = true,
     },
     CommonSense = {
-        -- Toggles whether Players can pry open doors, windows, etc. using a Crowbar. 
         PryingMechanic = true,
-        -- Displays the icon for Battery and Engine in vehicle dashboards in various colors depending on their condition. 
         PartsHighlighter = true,
-        -- Toggles friendly colors for those affected by color blindness. 
         ColorFilter = false,
     },
     ExpandedHeli = {
-        -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
+        -- Minimum=0 Maximum=999 Default=0
         StartDay = 14,
-        -- How long will the scheduler run from the start day.  The scheduler will adjust event progression to fit this duration. Minimum=1 Maximum=999 Default=90
+        -- Minimum=1 Maximum=999 Default=90
         SchedulerDuration = 90,
-        -- Toggle this on so that the scheduler will spawn events passed the duration limit. Events will still progress through stages according to the duration but events will never stop being scheduled.
         ContinueScheduling = true,
-        -- When "Continue Scheduling Forever" is toggle on, this toggled on makes the scheduler only use late-game events.
         ContinueSchedulingLateGameOnly = true,
-        -- How frequent jet events occur.  Jets fly by players causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_jet = 3,
-        -- How frequent Police events occur.  The police will take matters into their own hands and escort citizens around while firing on zombies. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_police = 3,
-        -- How frequent news events occur.  News choppers will hone in on any citizen they find and follow them around for a short time. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_news_chopper = 3,
-        -- How frequent military events occur.  The military will progress through stages: warn citizens, purge the undead, then ultimately purge anything that moves. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_military = 3,
-        -- How frequent FEMA aid drop events occur.  FEMA will conduct aid drops early on in the apocalypse. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_FEMA_drop = 3,
-        -- How frequent samaritan events occur.  Samaritans will drop off supplies to help survivors. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_samaritan_drop = 3,
-        -- How frequent survivor events occur.  Survivors will only flyby on scouting missions causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_survivor_heli = 3,
-        -- How frequent raider events occur.  Raiders will hone in on survivors to torment them for some entertainment. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
         Frequency_raiders = 3,
     },
     SOTO = {
-        -- Possibility to obtain XP boosts while leveling agility skills.
-        -- For example player can obtain Sneaky trait to increase their XP gain for Sneaking skill.
         AgilityTraitsObtainable = true,
-        -- Possibility to obtain XP boosts while leveling combat skills.
-        -- For example player can obtain Baseball Player trait to increase their XP gain for Long Blunt skill.
         CombatTraitsObtainable = true,
-        -- Possibility to obtain XP boosts while leveling survivalist skills.
-        -- For example player can obtain Forager trait to increase their XP gain for Foraging skill.
         SurvTraitsObtainable = false,
-        -- Possibility to obtain XP boosts while leveling crafting skills.
-        -- For example player can obtain Scullion trait to increase their XP gain for Cooking skill.
         CraftTraitsObtainable = false,
-        -- Possibility to obtain XP boosts while leveling firearm skills.
-        -- For example player can obtain Shooter trait to increase their XP gain for Aiming skill.
         FirearmTraitsObtainable = true,
-        -- Player can earn 1 Fitness XP once per game minute with 50% chance while running.
         AddFitXPWhileRun = true,
-        -- Should be lower than Max. 1 day = 24 Minimum=1 Maximum=100000 Default=168
+        -- Minimum=1 Maximum=100000 Default=168
         LoseCowardlyHoursMIN = 168,
-        -- Should be higher than Min. 1 day = 24 Minimum=1 Maximum=100000 Default=336
+        -- Minimum=1 Maximum=100000 Default=336
         LoseCowardlyHoursMAX = 336,
-        -- Should be lower than Max. Minimum=1 Maximum=100000 Default=1000
+        -- Minimum=1 Maximum=100000 Default=1000
         LoseCowardlyZombMIN = 1000,
-        -- Should be higher than Min. Minimum=1 Maximum=100000 Default=2000
+        -- Minimum=1 Maximum=100000 Default=2000
         LoseCowardlyZombMAX = 2000,
-        -- Should be lower than Max. 1 day = 24
-        -- x1.2 when starting with Cowardly trait. Minimum=1 Maximum=100000 Default=336
+        -- Minimum=1 Maximum=100000 Default=336
         EarnBraveHoursMIN = 336,
-        -- Should be higher than Min. 1 day = 24
-        -- x1.2 when starting with Cowardly trait. Minimum=1 Maximum=100000 Default=672
+        -- Minimum=1 Maximum=100000 Default=672
         EarnBraveHoursMAX = 672,
-        -- Should be lower than Max.
-        -- x1.2 when starting with Cowardly trait. Minimum=1 Maximum=100000 Default=2500
+        -- Minimum=1 Maximum=100000 Default=2500
         EarnBraveZombMIN = 2500,
-        -- Should be higher than Min.
-        -- x1.2 when starting with Cowardly trait. Minimum=1 Maximum=100000 Default=3500
+        -- Minimum=1 Maximum=100000 Default=3500
         EarnBraveZombMAX = 3500,
-        -- Should be lower than Max. 1 day = 24
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Minimum=1 Maximum=100000 Default=1080
+        -- Minimum=1 Maximum=100000 Default=1080
         EarnDesensitizedHoursMIN = 1080,
-        -- Should be higher than Min. 1 day = 24
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Minimum=1 Maximum=100000 Default=1680
+        -- Minimum=1 Maximum=100000 Default=1680
         EarnDesensitizedHoursMAX = 1680,
-        -- Should be lower than Max.
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Minimum=1 Maximum=100000 Default=5500
+        -- Minimum=1 Maximum=100000 Default=5500
         EarnDesensitizedZombMIN = 5500,
-        -- Should be higher than Min.
-        -- x1.2 when starting with Cowardly trait.
-        -- x0.8 when starting with Brave trait. Minimum=1 Maximum=100000 Default=8500
+        -- Minimum=1 Maximum=100000 Default=8500
         EarnDesensitizedZombMAX = 8500,
-        -- Should be lower than Max. 1 day = 24 Minimum=1 Maximum=100000 Default=672
+        -- Minimum=1 Maximum=100000 Default=672
         LosePacifistHoursMIN = 672,
-        -- Should be higher than Min. 1 day = 24 Minimum=1 Maximum=100000 Default=1008
+        -- Minimum=1 Maximum=100000 Default=1008
         LosePacifistHoursMAX = 1008,
-        -- Should be lower than Max. Minimum=1 Maximum=100000 Default=1500
+        -- Minimum=1 Maximum=100000 Default=1500
         LosePacifistZombMIN = 1500,
-        -- Should be higher than Min. Minimum=1 Maximum=100000 Default=2500
+        -- Minimum=1 Maximum=100000 Default=2500
         LosePacifistZombMAX = 2500,
-        -- Any weapon skill but Maintenance and Reloading. Minimum=0 Maximum=10 Default=7
+        -- Minimum=0 Maximum=10 Default=7
         LosePacifistSkillLvl = 7,
     },
-    A26 = {
-        -- Displays
-        --  - Debugging Messages from Mod
-        --  - Based on option level chosen
-        --  - Recommended setting is NORMAL
-        --  - Using Higher setting will result in alot of SPAM Default=Normal Info
-        -- 1 = OFF
-        -- 2 = Normal Info
-        -- 3 = Debug Info
-        EnumDebugLevels = 2,
-        -- Displays
-        --  - Weapon Info when Equipped
-        --  - For Debugging
-        --  - Obsolete... Use GunFighter Info Window Hot-Key instead Default=OFF
-        -- 1 = OFF
-        -- 2 = Firearms
-        EnumShowWeaponInfo = 1,
-        -- Debugging
-        --  - Disable Mod function(s) which Remove vanilla Distribution
-        --  - This will result in vanilla items spawning despite Removal / Reduction options
-        --  - Removals serve to Zero-Out certain items so options control frequency
-        --  - It is NOT recommended to use this Skip Option
-        --  - If experiencing slow loading of removals, ensure you are not using OLD MODS that contain OLD Distro method
-        BoolSkipRemovals = false,
-        -- Weapon Visual Effects
-        --  - Visible Cycling / Moving : Slide, Bolt, Pump, Bow-Arms, etc
-        --  - For Never-Before-Seen-Gun-Nut-Immersion
-        BoolVisualEffects = true,
-        -- Displays
-        --  - Hit Damage on Zombie
-        BoolShowHitDamage = false,
-        -- Displays
-        --  - Distance to Target (on hit)
-        --  - Hit Chance (approximate calculated) likely not accurate to current Core-Game calc
-        --  - But gives general idea of distance penalty when Dynamic Range is enabled
-        BoolShowHitRange = false,
-        -- Displays
-        --  - Ammunition Count
-        --  - Upper Left of Screen
-        --  - Hash marks represent 1 round where (+) represents 10
-        BoolDisplayAmmoCounter = true,
-        -- Displays
-        --  - Movement Gauge
-        --  - Widens & Narrows indicating
-        --  - Movement penalty when Shooting
-        --  - Recommend use with Dynamic Recoil / Reset Sight Picture
-        BoolDisplayMovementGauge = true,
-        -- Action
-        --  - Reduce, Prevent, or Divert
-        --  - Ejection of Empty Shell Casings on the Ground
-        --  - Or automatically added to inventory instead
-        --  - Don't forget to add all spent case items to Sandbox settings [World-Item-Remove-List] Default=100%
-        -- 1 = NONE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumEjectSpentCasings = 11,
-        -- Emergency Reload
-        --  - Select the Condition(s) to Drop magazine to the Ground
-        --  - Instead of placing one magazine back to inventory before inserting the next
-        --  - In other words : It's faster, but you are potentially loosing rounds in dropped magazines Default=Manual [Drop] on Second Press
-        -- 1 = NEVER [Retain] Always
-        -- 2 = Manual [Drop] on Second Press
-        -- 3 = Always [Drop] on Running
-        EnumEmergencyReload = 2,
-        -- Auto-Select Magazine Type
-        --  - When Enabled, the next Magazine Type will be set when all current Mag Type are empty
-        --  - When In-Game, [Mag-Type_1 Hot-Key] will Toggle this option
-        --  - When Enabled, Auto-Reload Ejected Mag is Disabled
-        --  - This was coded with the idea that we want to Run thru all currently selected Mag-Types before switching Default=OFF
-        -- 1 = OFF
-        -- 2 = Smallest First
-        EnumAutoMagType = 1,
-        -- Auto-Activate Weapon Mounted Night Vision
-        --  - When Enabled, NV is activated automocatically while Aiming
-        --  - When Disabled, NV is activated with [NV Hot-Key] while Aiming
-        --  - When In-Game, [NV Hot-Key] while Not Aiming will Toggle this option Default=Manual [ON] w/Aiming
-        -- 1 = OFF
-        -- 2 = Manual [ON] w/Aiming
-        EnumNVControl = 2,
-        -- Auto-Activate Laser Sight (On-Aim)
-        --  - When Enabled, Laser Sight is activated automatically while Aiming
-        --  - When Disabled, Laser Sight is activated with [Weapon-Light Hot-Key] while Aiming
-        --  - Pressing while not Aiming will toggle Weapon-Light (if available) Default=Manual [ON] w/Aiming
-        -- 1 = Manual [ON] w/Aiming
-        -- 2 = Manual [ON] w/Aiming (No-Glow)
-        -- 3 = Auto [ON] w/Aiming
-        EnumAutoToggleLaser = 1,
-        -- Weapon-Light RunTime
-        --  - Charge units drained per tick
-        --  - Higher value means LESS Runtime
-        --  - Current Charge can be seen from Inventory Window (Tool-Tip) or GunFighter Info Window Default=0.0001
-        -- 1 = INFINITE RUN-TIME
-        -- 2 = 0.000001
-        -- 3 = 0.000005
-        -- 4 = 0.00001
-        -- 5 = 0.00005
-        -- 6 = 0.0001
-        -- 7 = 0.0005
-        -- 8 = 0.001
-        -- 9 = 0.005
-        EnumLightRunTime = 6,
-        -- Torch
-        --  - Adjust the approximate Burn-Time for crafted Torches
-        --  - No Time-Remaining display for torches, as they are in-consistent and random by nature
-        --  - Flicker frequency, will however increase as torch life depletes Default=5
-        -- 1 = 1 - Shortest
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        -- 5 = 5
-        -- 6 = 6
-        -- 7 = 7
-        -- 8 = 8
-        -- 9 = 9
-        EnumTorchBurnTime = 5,
-        -- Torch
-        --  - Adjust the probability of setting Target on Fire when using a lit Torch Default=1/7
-        -- 1 = NEVER
-        -- 2 = 1/10
-        -- 3 = 1/9
-        -- 4 = 1/8
-        -- 5 = 1/7
-        -- 6 = 1/6
-        -- 7 = 1/5
-        -- 8 = 1/4
-        -- 9 = 1/3
-        -- 10 = 1/2
-        EnumTorchIgniteTarget = 5,
-        -- Auto-Equip Thrown Weapons
-        --  - When Enabled, and using Thrown Weapons, the next Thrown weapon will automatically be equipped
-        --  - By order of : Secondary Hand, R-Belt, L-Belt, Back, Inventory
-        --  - When In-Game, [Auto-Equip Thrown Hot-Key] will toggle this option
-        BoolAutoThrown = false,
-        -- LightSabers are REAL (REMOVED)
-        BoolLightSaberReal = false,
-        -- Function
-        --  - Adjust Rear Offset when using Fixed Weapons
-        --  - [0.5] to [0.6] seems best
-        --  - Due to limitations, Rotating into a Wall or Door will result in Exiting Fixed Weapon Mode
-        --  - This System is EXPERIMENTAL and will seem glitchy
-        --  - but accomplishes the mechanical aspect of making Fixed weapons Fixed
-        --  - Moving, Shoving, or Un-Equipping will Exit Fixed Weapon Mode (Leaving the weapon in place)
-        --  - The Point of Rotation will be the square you are in
-        --  - But may appear to jump if you are between squares
-        --  - It is NOT recommended to set up Fixed Weapons in narrow hallways or in corners
-        --  - Folding the Tripod will allow you to move with, but not Fire the weapon
-        --  - [NONE] will disable Fixed Weapon Behavior, meaning they won't really be Fixed Default=0.5
-        -- 1 = NONE - Not Fixed
-        -- 2 = 0.1
-        -- 3 = 0.2
-        -- 4 = 0.3
-        -- 5 = 0.4
-        -- 6 = 0.5
-        -- 7 = 0.6
-        -- 8 = 0.7
-        -- 9 = 0.8
-        -- 10 = 0.9
-        EnumFixedWeaponOffset = 6,
-        -- Penalty
-        --  - Applies Movement Penalty to Hit-Chance
-        --  - Calculated based on Firearm Recoil Characteristics per shot
-        --  - To Simulate degrees of Recoil Force upon the shooter
-        --  - Increasing difficulty in instances of Rapid Successive Shots or Automatic Fire
-        BoolDynamicRecoilSystem = true,
-        -- Penalty
-        --  - Applies Secondary Hit-Chance roll
-        --  - Calculating distance to target
-        --  - Making further targets harder to hit
-        --  - There may be splatter on Calculated Misses, but no Stagger or Damage Default=0% - No Penalty
-        -- 1 = 0% - No Penalty
-        -- 2 = 25% - Low Penalty
-        -- 3 = 50% - Med Penalty
-        -- 4 = 75% - High Penalty
-        EnumDynamicRangeSystem = 1,
-        -- Penalty
-        --  - Applies Movement Penalty to Hit-Chance
-        --  - Calculated based on Firearm Aim-Time Characteristics
-        --  - Applied when Aiming is stopped, reloading, etc
-        --  - To Simulate having to Re-Aquire when Sight-Picture is lost
-        BoolResetSightPicture = true,
-        -- Penalty
-        --  - Applies Aim-Time Penalty for using Firearms in Vehicles
-        --  - Calculated based on the Overall Length and Weight of the Firearm
-        --  - Mitigated by Folded-Stocks and Sawn-Off configurations
-        BoolVehiclePenalty = false,
-        -- Function
-        --  - Prevent Firearm Condition from decreasing
-        BoolFireArmsNeverBreak = false,
-        -- Function
-        --  - Reduce or Prevent Firearm Jamming Frequency
-        --  - Calculated based on option level chosen Default=25% - Hardly Ever
-        -- 1 = 100% - Default
-        -- 2 = 75% - Less Often
-        -- 3 = 50% - Rare
-        -- 4 = 25% - Hardly Ever
-        EnumFirearmJam = 4,
-        -- Function
-        --  - Reduce or Prevent Firearm Attachments from Breaking
-        --  - When weapon is used in Melee Mode
-        --  - Simulates sudden catostrophic failure Default=0% - Never
-        -- 1 = 100% - Default
-        -- 2 = 75% - Less Often
-        -- 3 = 50% - Rare
-        -- 4 = 25% - Hardly Ever
-        EnumAttachementsBreakOnMelee = 5,
-        -- Function
-        --  - Reduce or Prevent Firearm Attachments from Breaking
-        --  - When weapon is Fired normally
-        --  - Simulates sudden catostrophic failure Default=0% - Never
-        -- 1 = 100% - Default
-        -- 2 = 75% - Less Often
-        -- 3 = 50% - Rare
-        -- 4 = 25% - Hardly Ever
-        EnumAttachmentsBreakOnFire = 5,
-        -- Archery Breakage
-        --  - Reduce or Prevent possibility of Archery: Bolts / Arrows Breaking
-        --  - Breakage will only occur on impact with target or wall / door / etc
-        --  - and not when a missed shot lands in the open
-        --  - Finding and Reading the appropriate Skill Book will enable
-        --  - Broken Arrows / Bolts to be scrapped for usable components to re-build working ones Default=1/10
-        -- 1 = NEVER
-        -- 2 = 1/4
-        -- 3 = 1/6
-        -- 4 = 1/8
-        -- 5 = 1/10
-        -- 6 = 1/12
-        -- 7 = 1/14
-        -- 8 = 1/16
-        -- 9 = 1/18
-        EnumArrowBreak = 5,
-        -- Archery Damage
-        --  - Increase or Decrease Damage for Archery Bolts / Arrows
-        --  - By the option amount selected
-        --  - In case you think Archery should be more or less powerful
-        --  - Multiplier is applied when Archery weapon is Equipped Default=DEFAULT 100%
-        -- 1 = 50%
-        -- 2 = 60%
-        -- 3 = 70%
-        -- 4 = 80%
-        -- 5 = 90%
-        -- 6 = DEFAULT 100%
-        -- 7 = 110%
-        -- 8 = 120%
-        -- 9 = 130%
-        -- 10 = 140%
-        EnumArcheryDamage = 6,
-        -- Firearm Damage
-        --  - Decrease or Increase Damage for all Firearm Weapons
-        --  - By the option amount selected
-        --  - In case you think Firearms should be more or less powerful
-        --  - Multiplier is applied when Firearm weapon is Equipped Default=DEFAULT 100%
-        -- 1 = 50%
-        -- 2 = 60%
-        -- 3 = 70%
-        -- 4 = 80%
-        -- 5 = 90%
-        -- 6 = DEFAULT 100%
-        -- 7 = 110%
-        -- 8 = 120%
-        -- 9 = 130%
-        -- 10 = 140%
-        EnumFirearmDamage = 6,
-        -- Melee Damage
-        --  - Decrease or Increase Damage for all Melee Weapons
-        --  - By the option amount selected
-        --  - In case you think Melee should be more or less powerful
-        --  - Multiplier is applied when Melee weapon is Equipped Default=DEFAULT 100%
-        -- 1 = 50%
-        -- 2 = 60%
-        -- 3 = 70%
-        -- 4 = 80%
-        -- 5 = 90%
-        -- 6 = DEFAULT 100%
-        -- 7 = 110%
-        -- 8 = 120%
-        -- 9 = 130%
-        -- 10 = 140%
-        EnumMeleeDamage = 6,
-        -- Function
-        --  - Increase Grenade Launcher Range
-        --  - Calculated based on option level chosen Default=100% - Default
-        -- 1 = 100% - Default
-        -- 2 = 150% - Farther
-        -- 3 = 200% - Farther
-        -- 4 = 250% - Farther
-        EnumLauncherRangeMultiplier = 1,
-        -- Penalty
-        --  - Heavy-Weapon Movement Penalty
-        --  - Affects Minigun and Fixed Heavy Weapon
-        --  - Applies penalties which limit Running / Sprinting / Walking and Overall Speed Default=NO Penalty
-        -- 1 = NO Penalty
-        -- 2 = Limit Overall Speed Only
-        -- 3 = Limit Sprinting
-        -- 4 = Limit Running / Sprinting
-        -- 5 = Limit Walking to Sneak Mode
-        EnumHeavyWeaponMovement = 1,
-        -- Zombie Body Parts
-        --  - Enable possbility of hitting ALL Zombie body parts
-        --  - Vanilla only allows hitting: Head or Torso
-        --  - Primarily done to allow visible Arrows / Bolts stuck in Limbs
-        --  - Enabling may make killing zombies more difficult
-        BoolZombieBodyParts = false,
-        -- Sound
-        --  - Increase or Reduce the Effect of Suppression Attachments
-        --  - Calculated based on option level chosen Default=100% - Default
-        -- 1 = 150% - Loudest
-        -- 2 = 125% - Louder
-        -- 3 = 100% - Default
-        -- 4 = 75% - Quiet
-        -- 5 = 50% - Whisper
-        EnumSoundSuppression = 3,
-        -- Sound
-        --  - Increase the Overall Sound Radius of all Firearms
-        --  - Calculated based on option level chosen Default=+0 - No Boost
-        -- 1 = +0 - No Boost
-        -- 2 = +10 - Linear Adjust
-        -- 3 = +20 - Linear Adjust
-        -- 4 = +30 - Linear Adjust
-        -- 5 = +40 - Linear Adjust
-        -- 6 = +50 - Linear Adjust
-        -- 7 = +60 - Linear Adjust
-        -- 8 = +70 - Linear Adjust
-        -- 9 = +80 - Linear Adjust
-        -- 10 = +90 - Linear Adjust
-        -- 11 = +100 - Linear Adjust
-        -- 12 = +110 - Linear Adjust
-        -- 13 = +120 - Linear Adjust
-        -- 14 = +130 - Linear Adjust
-        -- 15 = +140 - Linear Adjust
-        -- 16 = +150 - Linear Adjust
-        -- 17 = +160 - Linear Adjust
-        -- 18 = +170 - Linear Adjust
-        -- 19 = +180 - Linear Adjust
-        -- 20 = +190 - Linear Adjust
-        EnumSoundLinearBase = 1,
-        -- Sound
-        --  - Select to use Vanilla Sound Bank files (for Compatibility)
-        --  - Where Core Game (FMOD system) does not apply Mod Sounds correctly
-        BoolUseVanillaShotSounds = false,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Archery and Sling-Shot weapons Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeBOW = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Weapons that shoot Flames Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeFLAME = 2,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Grenade / Rocket Launchers, and Explosive / Demolition Ordinance Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeGREN = 3,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Mini-Gun and Heavy Tripod Fixed Weapons Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeMINI = 2,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Portable Light Machineguns and Squad Assault Weapons Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeLMG = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Non-Select-Fire Firearms Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeSEMI = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Select-Fire Automatic that use Rifle Ammunition Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeAUTO = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Select-Fire Automatic that use Pistol Ammunition Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeSMG = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Lever Action : Firearms, Shotguns Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeLEVER = 3,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Revolving : Firearms, Launchers, Shotguns Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeREV = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Pump Action : Firearms, Launchers, Shotguns Default=40%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypePUMP = 5,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Bolt Action : Firearms, Launchers, Shotguns Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeBOLT = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Action
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Break-Open : Firearms, Launchers, Shotguns Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumTypeBREAK = 3,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginUSA = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginSOV = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginKOR = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginPAC = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginCZE = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginEUR = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginISR = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Origin of Manufacture
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumOriginREST = 11,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber50BMG = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber4gShot = 2,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber10gShot = 2,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber12gShot = 8,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber20gShot = 2,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber3006SPG = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=40%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber308WIN = 5,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber762x54mmR = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=40%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber545x39mm = 5,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber762x39mm = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber556x45mm = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber223REM = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber45LC410g = 3,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber4570 = 3,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber44MAG = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber45ACP = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=40%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber38SPC = 5,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber9mm = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber57x28mm = 4,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=40%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber380ACP = 5,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber22LR = 6,
-        -- Type
-        --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
-        --  - This will affect associated Items and Ammo
-        --  - Only when those are not used by another Category
-        --  - Affects ALL Gun that use : BB, Pellet, Paintball Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumCaliber177BB = 6,
-        -- Parts
-        --  - Reduce or Remove Suppressor Attachments
-        --  - This only affects Container Spawn (Not Pre-Attached parts on Zombie Weapons)
-        --  - Suppressors are generally not used by Police or Civilians
-        --  - If you want to find Suppressors everywhere, see Exlusionary settings below Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumAttachementSuppressor = 2,
-        -- Parts
-        --  - Reduce or Remove Optic(s) Attachments
-        --  - This only affects Container Spawn (Not Pre-Attached parts on Zombie Weapons) Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumAttachementOptics = 2,
-        -- Parts
-        --  - Reduce or Remove Light / Laser Attachments
-        --  - This only affects Container Spawn (Not Pre-Attached parts on Zombie Weapons) Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumAttachementLightLaser = 2,
-        -- Parts
-        --  - Reduce or Remove All Other Attachments
-        --  - This only affects Container Spawn (Not Pre-Attached parts on Zombie Weapons) Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumAttachementAllOther = 2,
-        -- Ammunition
-        --  - Reduce or Remove Ammunition Canisters
-        --  - Sandbox Ammunition Rarity Affects the number of boxes in Canister Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumAmmoCan = 2,
-        -- Ammunition
-        --  - Reduce or Remove Ammunition Boxes
-        --  - Also the base chance for (Rocket / Grenade / Landmine) munitions Default=50%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumAmmoBox = 6,
-        -- Magazines
-        --  - Reduce or Remove Polymer Canisters containing Magazines Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumPolyCan = 2,
-        -- Magazines
-        --  - Reduce or Remove Standard Magazines Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumStdMag = 4,
-        -- Magazines
-        --  - Reduce or Remove Extended Magazines Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumExtMag = 3,
-        -- Magazines
-        --  - Reduce or Remove Drum / Box Magazines Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumDrumMag = 2,
-        -- Melee
-        --  - Reduce or Remove Large Knife Weapons
-        --  - From Mod Only... No effect on Vanilla Items Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumMeleeKnifeLarge = 3,
-        -- Melee
-        --  - Reduce or Remove Small Knife Weapons
-        --  - From Mod Only... No effect on Vanilla Items Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumMeleeKnifeSmall = 4,
-        -- Melee
-        --  - Reduce or Remove Sword Weapons
-        --  - From Mod Only... No effect on Vanilla Items Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumMeleeSword = 2,
-        -- Melee
-        --  - Reduce or Remove Axe Weapons
-        --  - From Mod Only... No effect on Vanilla Items Default=20%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumMeleeAxe = 3,
-        -- Melee
-        --  - Reduce or Remove Blunt Weapons
-        --  - From Mod Only... No effect on Vanilla Items Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumMeleeBlunt = 4,
-        -- Melee
-        --  - Reduce or Remove Spear Weapons
-        --  - From Mod Only... No effect on Vanilla Items Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumMeleeSpear = 2,
-        -- Melee
-        --  - Reduce or Remove Power-Tool Weapons
-        --  - including Chainsaws Default=100%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumPowerTool = 11,
-        -- Loot
-        --  - Reduce or Remove Ammunition Reloading related items
-        --  - Reading the Lyman 49th Edition Reloading Manual is required to make Ammunition Default=30%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumReloadingItems = 4,
-        -- Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        EnumRandomCases = 2,
-        -- Zombie Concealed Carry Firearms
-        --  - Increase or Remove Firearms on Civilian Zombies
-        --  - Zombies will have Firearms in Fanny Packs or Purses designated as (CCW)
-        --  - And a chance of Ammunition, Magazines, or Clips where applicable
-        --  - Origin / Action / Caliber / 92+ settings will affect result Default=10%
-        -- 1 = REMOVE
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        -- 11 = 100%
-        -- 12 = 110%
-        -- 13 = 120%
-        -- 14 = 130%
-        -- 15 = 140%
-        -- 16 = 150%
-        -- 17 = 160%
-        -- 18 = 170%
-        -- 19 = 180%
-        -- 20 = 190%
-        EnumZombieCCW = 2,
-        -- Military / Police Vehicle
-        --  - Adjust the overall spawn result in Military / Police Vehicles
-        --  - If Military Distribution settings are severely reduced
-        --  - you may need to set this higher to compensate the result
-        --  - Selecting [DO NOT OVERRIDE] will result in (Vanilla or Vehicle Mod) spawn only
-        --  - Origin / Action / Caliber / 92+ settings will affect result Default=50%
-        -- 1 = 0% - DO NOT OVERRIDE
-        -- 2 = 5%
-        -- 3 = 10%
-        -- 4 = 15%
-        -- 5 = 20%
-        -- 6 = 25%
-        -- 7 = 30%
-        -- 8 = 35%
-        -- 9 = 40%
-        -- 10 = 45%
-        -- 11 = 50%
-        -- 12 = 55%
-        -- 13 = 60%
-        -- 14 = 65%
-        -- 15 = 70%
-        -- 16 = 75%
-        -- 17 = 80%
-        -- 18 = 85%
-        -- 19 = 90%
-        -- 20 = 95%
-        EnumVLR = 11,
-        -- Loot
-        --  - Override Distribution so GunFighter Options can affect results for
-        --  - Brita's Armor Pack
-        --  - USMC Armory Mod
-        --  - 92+ setting will affect result Default=50%
-        -- 1 = DO NOT OVERRIDE DISTRO
-        -- 2 = 10%
-        -- 3 = 20%
-        -- 4 = 30%
-        -- 5 = 40%
-        -- 6 = 50%
-        -- 7 = 60%
-        -- 8 = 70%
-        -- 9 = 80%
-        -- 10 = 90%
-        -- 11 = 100%
-        -- 12 = 110%
-        -- 13 = 120%
-        -- 14 = 130%
-        -- 15 = 140%
-        -- 16 = 150%
-        -- 17 = 160%
-        -- 18 = 170%
-        -- 19 = 180%
-        -- 20 = 190%
-        EnumArmor = 6,
-        -- Loot
-        --  - Reduce or Remove Weapons / Items produced after 1992
-        --  - Be Advised... This option Removes A-L-O-T of weapons Default=ALLOW
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumPost1992Production = 5,
-        -- Military Region
-        --  - Reduce or Limit Military Location weapons and items by Region
-        --  - Selecting a Region which has few items will require (+)Trim setting to compensate Default=None (Recommanded MIL Trim 50+)
-        -- 1 = United States (Recommanded MIL Trim 150+)
-        -- 2 = Soviet Union (Recommanded MIL Trim 260+)
-        -- 3 = Czech Republic (Recommanded MIL Trim 280+)%
-        -- 4 = Republic of Korea (Recommanded MIL Trim 280+)
-        -- 5 = China/Pac-Rim (Recommanded MIL Trim 220+)
-        -- 6 = European Nations (Recommanded MIL Trim 260+)
-        -- 7 = Israel (Recommanded MIL Trim 170+)
-        -- 8 = None (Recommanded MIL Trim 50+)
-        -- 9 = None (Recommanded MIL Trim 50+)
-        EnumMILRegion = 8,
-        -- Exclusion
-        --  - Reduce or Remove Police Items from Civilain Locations
-        --  - Police items not generally suited for Civilian Purposes
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumCIVxLEO = 1,
-        -- Exclusion
-        --  - Reduce or Remove Military Items from Civilain Locations
-        --  - Military items not generally suited for Civilian Purposes
-        --  - LMG, Integral-Suppressed, Grenade, etc.
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumCIVxMIL = 1,
-        -- Exclusion
-        --  - Reduce or Remove Civilian Items from Police Locations
-        --  - Non-Service Contracted or Odd caliber items not generally suited for Law Enforcement Purposes
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumLEOxCIV = 1,
-        -- Exclusion
-        --  - Reduce or Remove Military Items from Police Locations
-        --  - Military items not generally suited for Law Enforcement Purposes
-        --  - Suppressors are not standard Police equipment, for suppressors in Police locations don't use REMOVE option
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumLEOxMIL = 1,
-        -- Exclusion
-        --  - Reduce or Remove Non-Military Items from Military Locations
-        --  - Small or Odd caliber items not generally suited for Military Purposes
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumMILxNON = 1,
-        -- Exclusion
-        --  - Reduce or Remove Non-Security Items from Security Locations
-        --  - Small, Odd, or Large caliber items not generally suited for Security Purposes
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumSECxNON = 1,
-        -- Exclusion
-        --  - Reduce or Remove Non-Hunting Items from Hunting Locations
-        --  - Automatic or Large Capacity items not generally suited for Hunting Purposes
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumHNTxNON = 1,
-        -- Exclusion
-        --  - Reduce or Remove Non-Surplus Items from Surplus Locations
-        --  - Modern or Newer items not generally from Surplus sources
-        --  - If you want everything to spawn everywhere, select ALLOW Default=REMOVE
-        -- 1 = REMOVE
-        -- 2 = 25%
-        -- 3 = 50%
-        -- 4 = 75%
-        EnumSURxNON = 1,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumGUNRollGUN = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumGUNRollAMMO = 3,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumGUNRollPART = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumGUNRollARMOR = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumLEORollGUN = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumLEORollAMMO = 3,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumLEORollPART = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumLEORollARMOR = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumMILRollGUN = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumMILRollAMMO = 3,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumMILRollPART = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumMILRollARMOR = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSECRollGUN = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSECRollAMMO = 3,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSECRollPART = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSECRollARMOR = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSURRollGUN = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSURRollAMMO = 3,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSURRollPART = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumSURRollARMOR = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumHNTRollGUN = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumHNTRollAMMO = 3,
-        -- Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumHNTRollPART = 2,
-        -- Roll
-        --  - Each Roll gives every item on the list a chance to spawn
-        --  - Each Additional Roll gives each item another chance to spawn
-        --  - Increasing will substantially increase overall spawn Default=2
-        -- 1 = 1
-        -- 2 = 2
-        -- 3 = 3
-        -- 4 = 4
-        EnumHNTRollARMOR = 2,
-        -- Trim
-        --  - Increase Spawn-Chance Value for every remaining item in Civilian Distribution areas
-        --  - Generally Required to bring overall spawn result back up
-        --  - When Exclusions / Removals / Reductions are applied Default=+ 0%
-        -- 1 = + 0%
-        -- 2 = + 10%
-        -- 3 = + 20%
-        -- 4 = + 30%
-        -- 5 = + 40%
-        -- 6 = + 50%
-        -- 7 = + 60%
-        -- 8 = + 70%
-        -- 9 = + 80%
-        -- 10 = + 90%
-        -- 11 = + 100%
-        -- 12 = + 110%
-        -- 13 = + 120%
-        -- 14 = + 130%
-        -- 15 = + 140%
-        -- 16 = + 150%
-        -- 17 = + 160%
-        -- 18 = + 170%
-        -- 19 = + 180%
-        -- 20 = + 190%
-        EnumCIVx = 1,
-        -- Trim
-        --  - Increase Spawn-Chance Value for every remaining item in Police Distribution areas
-        --  - Generally Required to bring overall spawn result back up
-        --  - When Exclusions / Removals / Reductions are applied Default=+ 40%
-        -- 1 = + 0%
-        -- 2 = + 10%
-        -- 3 = + 20%
-        -- 4 = + 30%
-        -- 5 = + 40%
-        -- 6 = + 50%
-        -- 7 = + 60%
-        -- 8 = + 70%
-        -- 9 = + 80%
-        -- 10 = + 90%
-        -- 11 = + 100%
-        -- 12 = + 110%
-        -- 13 = + 120%
-        -- 14 = + 130%
-        -- 15 = + 140%
-        -- 16 = + 150%
-        -- 17 = + 160%
-        -- 18 = + 170%
-        -- 19 = + 180%
-        -- 20 = + 190%
-        EnumLEOx = 5,
-        -- Trim
-        --  - Increase Spawn-Chance Value for every remaining item in Military Distribution areas
-        --  - Generally Required to bring overall spawn result back up
-        --  - When Exclusions / Removals / Reductions are applied Default=+ 0%
-        -- 1 = + 0%
-        -- 2 = + 10%
-        -- 3 = + 20%
-        -- 4 = + 30%
-        -- 5 = + 40%
-        -- 6 = + 50%
-        -- 7 = + 60%
-        -- 8 = + 70%
-        -- 9 = + 80%
-        -- 10 = + 90%
-        -- 11 = + 100%
-        -- 12 = + 110%
-        -- 13 = + 120%
-        -- 14 = + 130%
-        -- 15 = + 140%
-        -- 16 = + 150%
-        -- 17 = + 160%
-        -- 18 = + 170%
-        -- 19 = + 180%
-        -- 20 = + 190%
-        -- 21 = + 200%
-        -- 22 = + 210%
-        -- 23 = + 220%
-        -- 24 = + 230%
-        -- 25 = + 240%
-        -- 26 = + 250%
-        -- 27 = + 260%
-        -- 28 = + 270%
-        -- 29 = + 280%
-        -- 30 = + 290%
-        EnumMILx = 1,
-        -- Trim
-        --  - Increase Spawn-Chance Value for every remaining item in Security Distribution areas
-        --  - Generally Required to bring overall spawn result back up
-        --  - When Exclusions / Removals / Reductions are applied Default=+ 0%
-        -- 1 = + 0%
-        -- 2 = + 10%
-        -- 3 = + 20%
-        -- 4 = + 30%
-        -- 5 = + 40%
-        -- 6 = + 50%
-        -- 7 = + 60%
-        -- 8 = + 70%
-        -- 9 = + 80%
-        -- 10 = + 90%
-        -- 11 = + 100%
-        -- 12 = + 110%
-        -- 13 = + 120%
-        -- 14 = + 130%
-        -- 15 = + 140%
-        -- 16 = + 150%
-        -- 17 = + 160%
-        -- 18 = + 170%
-        -- 19 = + 180%
-        -- 20 = + 190%
-        EnumSECx = 1,
-        -- Trim
-        --  - Increase Spawn-Chance Value for every remaining item in Hunting Distribution areas
-        --  - Generally Required to bring overall spawn result back up
-        --  - When Exclusions / Removals / Reductions are applied Default=+ 60%
-        -- 1 = + 0%
-        -- 2 = + 10%
-        -- 3 = + 20%
-        -- 4 = + 30%
-        -- 5 = + 40%
-        -- 6 = + 50%
-        -- 7 = + 60%
-        -- 8 = + 70%
-        -- 9 = + 80%
-        -- 10 = + 90%
-        -- 11 = + 100%
-        -- 12 = + 110%
-        -- 13 = + 120%
-        -- 14 = + 130%
-        -- 15 = + 140%
-        -- 16 = + 150%
-        -- 17 = + 160%
-        -- 18 = + 170%
-        -- 19 = + 180%
-        -- 20 = + 190%
-        EnumHNTx = 7,
-        -- Trim
-        --  - Increase Spawn-Chance Value for every remaining item in Surplus Distribution areas
-        --  - Generally Required to bring overall spawn result back up
-        --  - When Exclusions / Removals / Reductions are applied Default=+ 20%
-        -- 1 = + 0%
-        -- 2 = + 10%
-        -- 3 = + 20%
-        -- 4 = + 30%
-        -- 5 = + 40%
-        -- 6 = + 50%
-        -- 7 = + 60%
-        -- 8 = + 70%
-        -- 9 = + 80%
-        -- 10 = + 90%
-        -- 11 = + 100%
-        -- 12 = + 110%
-        -- 13 = + 120%
-        -- 14 = + 130%
-        -- 15 = + 140%
-        -- 16 = + 150%
-        -- 17 = + 160%
-        -- 18 = + 170%
-        -- 19 = + 180%
-        -- 20 = + 190%
-        EnumSURx = 3,
-        -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Civilian Location containers
-        BoolCIVammo = true,
-        -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Police Location containers
-        BoolLEOammo = true,
-        -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Military Location containers
-        BoolMILammo = true,
-        -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Security Location containers
-        BoolSECammo = true,
-        -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Hunting Location containers
-        BoolHNTammo = true,
-        -- Allow Core Game to add Associated Magazines and Loose or Box Ammo in Surplus Location containers
-        BoolSURammo = true,
-    },
     SkillRecoveryJournal = {
-        -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
+        -- Minimum=1 Maximum=100 Default=100
         RecoveryPercentage = 75,
-        -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
         TranscribeSpeed = 1.0,
-        -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
         ReadTimeSpeed = 1.0,
-        -- Starting with more than 1 point in a skill generally nets you bonus XP - with this toggled off that XP is not recorded. All XP recorded is that of a character with no starting skills. This does NOT recover starting levels - only the bonus XP earned.
         RecoverProfessionAndTraitsBonuses = false,
-        -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
         TranscribeTVXP = false,
-        -- Toggle on to record passive skills.
         RecoverPassiveSkills = false,
-        -- Toggle on to record combat skills.
         RecoverCombatSkills = true,
-        -- Toggle on to record firearm skills.
         RecoverFirearmSkills = true,
-        -- Toggle on to record crafting skills.
         RecoverCraftingSkills = true,
-        -- Toggle on to record survivalist skills.
         RecoverSurvivalistSkills = true,
-        -- Toggle on to record agility skills.
         RecoverAgilitySkills = true,
-        -- Toggle off to prevent journals from recovering/transcribing recipes.
         RecoverRecipes = true,
-        -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
         RecoveryJournalUsed = false,
         Craftable = true,
     },
     VehicleRecycling = {
-        -- The following parts must be uninstalled before dismantling: hood, trunk lid, doors, windows, seats.
         UninstallParts = false,
         -- Minimum=1 Maximum=100 Default=1
         ActionTimeMultiplier = 1,
