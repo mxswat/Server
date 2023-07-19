@@ -735,7 +735,7 @@ SandboxVars = {
         EnumLEORollAMMO = 3,
         EnumLEORollPART = 2,
         EnumLEORollARMOR = 2,
-        EnumMILRollGUN = 2,
+        EnumMILRollGUN = 1,
         EnumMILRollAMMO = 3,
         EnumMILRollPART = 2,
         EnumMILRollARMOR = 2,
@@ -785,6 +785,10 @@ SandboxVars = {
         MultiSelectDisablePositiveTraits = "Nutritionist;Herbalist;",
         MultiSelectDisableNegativeTraits = "AllThumbs;SundayDriver;Illiterate;HardOfHearing;Deaf;Clumsy;Asthmatic;",
         CanCraftStorageUpgrade = true,
+        -- Minimum=10 Maximum=100 Default=30
+        StorageUpgradeBaseWeight = 30,
+        -- Minimum=2.10 Maximum=10.00 Default=2.10
+        StorageImprovementMultiplier = 2.1,
     },
     CommonSense = {
         PryingMechanic = true,
@@ -872,5 +876,15 @@ SandboxVars = {
         UninstallParts = false,
         -- Minimum=1 Maximum=100 Default=1
         ActionTimeMultiplier = 1,
+    },
+    LingeringVoices = {
+        RespondToSound = true,
+        CustomLines = true,
+        -- Minimum=0 Maximum=604800 Default=5
+        LowerLineLimit = 5,
+        -- Minimum=0 Maximum=604800 Default=86400
+        UpperLineLimit = 86400,
+        -- Minimum=0 Maximum=1000 Default=1
+        StaggerSpeakChance = 1,
     },
 }
