@@ -31,5 +31,10 @@ function SpawnRegions()
 		{ name = "Elysium_Island", file = "media/maps/Elysium_Island/spawnpoints.lua" },
 		{ name = "researchbaseroad", file = "media/maps/researchbaseroad/spawnpoints.lua" },
 		{ name = "SaveOurStation_KnoxCountry_World", file = "media/maps/SaveOurStation_KnoxCountry_World/spawnpoints.lua" },
+		{ name = "Grapeseed", file = "media/maps/Grapeseed/spawnpoints.lua" },
+		{ name = "St Paulo", file = "media/maps/St Paulo/spawnpoints.lua" },
+		{ name = "Riverside Fire Department", file = "media/maps/Riverside Fire Department/spawnpoints.lua" },
+		{ name = "West Point Fire Department", file = "media/maps/West Point Fire Department/spawnpoints.lua" },
+		{ name = "li_township", file = "media/maps/li_township/spawnpoints.lua" },
 	}
 end
