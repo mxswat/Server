@@ -185,7 +185,7 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 1.1,
+    XpMultiplier = 1.2,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
     XpMultiplierAffectsPassive = true,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
@@ -699,12 +699,12 @@ SandboxVars = {
         EnumAttachementOptics = 2,
         EnumAttachementLightLaser = 2,
         EnumAttachementAllOther = 2,
-        EnumAmmoCan = 2,
-        EnumAmmoBox = 6,
+        EnumAmmoCan = 5,
+        EnumAmmoBox = 8,
         EnumPolyCan = 2,
         EnumStdMag = 4,
-        EnumExtMag = 3,
-        EnumDrumMag = 2,
+        EnumExtMag = 4,
+        EnumDrumMag = 4,
         EnumMeleeKnifeLarge = 3,
         EnumMeleeKnifeSmall = 4,
         EnumMeleeSword = 2,
@@ -1020,7 +1020,7 @@ SandboxVars = {
     },
     RewardingNightCombat = {
         enableIndicator = true,
-        draggableIndicator = false,
+        draggableIndicator = true,
         indicatorColor = 6,
         enableTriggerSound = false,
         -- Minimum=0 Maximum=100 Default=100
@@ -1243,7 +1243,7 @@ SandboxVars = {
         averageFogIntensity = 100,
         -- Minimum=0 Maximum=100 Default=20
         fogIntensityDeviationPercentage = 20,
-        enableVehicleMalfunctions = true,
+        enableVehicleMalfunctions = false,
         -- Minimum=0 Maximum=100 Default=25
         chanceOfVehicleMalfunction = 25,
         enableTotalVehicleMalfunctions = false,
