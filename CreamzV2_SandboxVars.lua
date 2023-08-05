@@ -1212,54 +1212,6 @@ SandboxVars = {
         ReliabilityProfile = 3,
         TimeDurationMultiplier = 3,
     },
-    TheDarknessIsComing = {
-        -- Minimum=0 Maximum=720 Default=120
-        hoursBetweenEvents = 120,
-        -- Minimum=0 Maximum=100 Default=25
-        hoursBetweenEventsDeviationPercentage = 25,
-        -- Minimum=0 Maximum=360 Default=32
-        averageEventLengthHours = 32,
-        -- Minimum=0 Maximum=400 Default=72
-        maxEventLength = 72,
-        -- Minimum=0 Maximum=100 Default=25
-        eventLengthDeviationPercentage = 25,
-        -- Minimum=0 Maximum=100 Default=25
-        chanceOfMaxEventLength = 25,
-        playCrowsOnStart = true,
-        playSirensOnStart = true,
-        playSirensOnFinish = true,
-        persistFogBetweenEvents = false,
-        -- Minimum=0 Maximum=100 Default=80
-        averagePersistentFogIntensity = 80,
-        -- Minimum=0 Maximum=100 Default=20
-        persistentFogIntensityDeviationPercentage = 20,
-        enableChanceOfFog = true,
-        enableChanceOfHeavyFog = true,
-        -- Minimum=0 Maximum=100 Default=75
-        chanceOfFog = 75,
-        -- Minimum=0 Maximum=100 Default=35
-        chanceOfHeavyFog = 35,
-        -- Minimum=0 Maximum=100 Default=100
-        averageFogIntensity = 100,
-        -- Minimum=0 Maximum=100 Default=20
-        fogIntensityDeviationPercentage = 20,
-        enableVehicleMalfunctions = false,
-        -- Minimum=0 Maximum=100 Default=25
-        chanceOfVehicleMalfunction = 25,
-        enableTotalVehicleMalfunctions = false,
-        updateZombieLoreOnStart = true,
-        -- Minimum=0 Maximum=5 Default=2
-        updateZombieLoreAfterHours = 2,
-        overrideZombieSpeed = true,
-        darkZombieSpeed = 1,
-        overrideZombieStrength = false,
-        darkZombiesStrength = 2,
-        darkZombiesToughness = 2,
-        darkZombiesHearing = 2,
-        darkZombiesSight = 3,
-        darkZombiesCognition = 3,
-        darkZombiesMemory = 2,
-    },
     VehicleRepairOverhaul = {
         DisableVehicleSalvage = false,
     },
