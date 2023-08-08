@@ -187,7 +187,7 @@ SandboxVars = {
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
     XpMultiplier = 1.2,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
-    XpMultiplierAffectsPassive = true,
+    XpMultiplierAffectsPassive = false,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
     ZombieAttractionMultiplier = 1.0,
     -- Governs whether cars are locked, need keys to start etc.
@@ -242,7 +242,7 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    FoodRotSpeed = 4,
+    FoodRotSpeed = 5,
     -- Define how much a fridge will be effective. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -409,7 +409,7 @@ SandboxVars = {
     -- 2 = Medium
     RearVulnerability = 3,
     -- Disable to walk unimpeded while melee attacking.
-    AttackBlockMovements = true,
+    AttackBlockMovements = false,
     AllClothesUnlocked = false,
     -- if disabled, tainted water will not have a warning marking it as such
     EnableTaintedWaterText = true,
@@ -578,7 +578,7 @@ SandboxVars = {
         -- Allows zombies to trigger house alarms when breaking through windows and doors.
         TriggerHouseAlarm = false,
         -- When enabled if multiple zombies are attacking they can drag you down to feed. Dependent on zombie strength.
-        ZombiesDragDown = true,
+        ZombiesDragDown = false,
         -- When enabled zombies will have a chance to lunge after climbing over a fence if you're too close.
         ZombiesFenceLunge = true,
         -- Default=Some zombies in the world will pretend to be dead
@@ -592,7 +592,7 @@ SandboxVars = {
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
         PopulationStartMultiplier = 0.6,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
-        PopulationPeakMultiplier = 2.0,
+        PopulationPeakMultiplier = 2.5,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
         PopulationPeakDay = 28,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
@@ -674,10 +674,10 @@ SandboxVars = {
         EnumOriginISR = 11,
         EnumOriginREST = 11,
         EnumCaliber50BMG = 6,
-        EnumCaliber4gShot = 6,
-        EnumCaliber10gShot = 6,
+        EnumCaliber4gShot = 2,
+        EnumCaliber10gShot = 2,
         EnumCaliber12gShot = 11,
-        EnumCaliber20gShot = 6,
+        EnumCaliber20gShot = 2,
         EnumCaliber3006SPG = 4,
         EnumCaliber308WIN = 6,
         EnumCaliber762x54mmR = 7,
@@ -691,7 +691,7 @@ SandboxVars = {
         EnumCaliber45ACP = 6,
         EnumCaliber38SPC = 5,
         EnumCaliber9mm = 11,
-        EnumCaliber57x28mm = 6,
+        EnumCaliber57x28mm = 4,
         EnumCaliber380ACP = 5,
         EnumCaliber22LR = 6,
         EnumCaliber177BB = 6,
@@ -790,6 +790,11 @@ SandboxVars = {
         -- Minimum=2.10 Maximum=10.00 Default=2.10
         StorageImprovementMultiplier = 2.1,
         DisableCropsRotting = true,
+        EnableRespawn = true,
+        -- Minimum=0 Maximum=100 Default=100
+        XPKeptOnRespawn = 100,
+        -- Minimum=0 Maximum=100 Default=75
+        XPKeptByLowerXPTrait = 75,
     },
     CommonSense = {
         PryingMechanic = true,
@@ -1174,7 +1179,7 @@ SandboxVars = {
         -- Minimum=0 Maximum=10000 Default=1000
         HordeTriggerThreshold = 1000,
         -- Minimum=0 Maximum=365 Default=20
-        HordeFirstDay = 20,
+        HordeFirstDay = 30,
         -- Minimum=1 Maximum=10 Default=5
         HordeNumWaves = 5,
         -- Minimum=1 Maximum=120 Default=30
