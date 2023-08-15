@@ -460,7 +460,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    CarDamageOnImpact = 2,
+    CarDamageOnImpact = 1,
     -- Damage received by the player from the car in a collision. Default=None
     -- 1 = None
     -- 2 = Low
@@ -691,7 +691,7 @@ SandboxVars = {
         EnumCaliber45ACP = 6,
         EnumCaliber38SPC = 5,
         EnumCaliber9mm = 11,
-        EnumCaliber57x28mm = 4,
+        EnumCaliber57x28mm = 6,
         EnumCaliber380ACP = 5,
         EnumCaliber22LR = 6,
         EnumCaliber177BB = 6,
@@ -974,7 +974,7 @@ SandboxVars = {
         Frequency_FEMA_drop = 3,
         Frequency_samaritan_drop = 3,
         Frequency_survivor_heli = 3,
-        Frequency_raiders = 3,
+        Frequency_raiders = 2,
     },
     FWOFitness = {
         InitialPerkBonus = true,
@@ -1164,51 +1164,6 @@ SandboxVars = {
         -- Minimum=0 Maximum=100 Default=20
         SafeZombieDistance = 10,
         NotWhenChased = true,
-    },
-    HereTheyCome = {
-        -- Minimum=0 Maximum=72000 Default=8640
-        HordeCooldown = 8640,
-        -- Minimum=0 Maximum=23 Default=0
-        HordeMinHour = 0,
-        -- Minimum=0 Maximum=23 Default=6
-        HordeMaxHour = 6,
-        -- Minimum=0 Maximum=10000 Default=0
-        HordeMinHourlyProgress = 0,
-        -- Minimum=0 Maximum=10000 Default=250
-        HordeMaxHourlyProgress = 250,
-        -- Minimum=0 Maximum=10000 Default=1000
-        HordeTriggerThreshold = 1000,
-        -- Minimum=0 Maximum=365 Default=20
-        HordeFirstDay = 30,
-        -- Minimum=1 Maximum=10 Default=5
-        HordeNumWaves = 5,
-        -- Minimum=1 Maximum=120 Default=30
-        TimeBetweenWaves = 30,
-        -- Minimum=1 Maximum=1200 Default=100
-        HordeWaveBatchTicks = 100,
-        -- Minimum=1 Maximum=100 Default=5
-        HordeWaveBatchSize = 5,
-        -- Minimum=1 Maximum=300 Default=30
-        HordeWaveMinZombieCount = 30,
-        -- Minimum=0 Maximum=300 Default=75
-        HordeWaveMaxZombieCount = 75,
-        -- Minimum=0 Maximum=100 Default=1
-        HordeZombieIncrement = 1,
-        -- Minimum=5 Maximum=200 Default=65
-        HordeMinSpawnDistance = 65,
-        -- Minimum=5 Maximum=200 Default=85
-        HordeMaxSpawnDistance = 85,
-        HordeProgressIndicator = true,
-        HordeWarnText = true,
-        -- Minimum=5 Maximum=180 Default=10
-        HordeWarnTime = 10,
-        -- Minimum=0 Maximum=360 Default=30
-        HordeDirectionMaxAngle = 30,
-        PulsePlayersDuringHorde = true,
-        -- Minimum=5 Maximum=200 Default=125
-        PulseRange = 125,
-        -- Minimum=1 Maximum=120 Default=5
-        TimeBetweenPulses = 5,
     },
     SaveOurStationCore = {
         RequirePowerShutoff = true,
