@@ -1602,7 +1602,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber22LR = 6,
+        EnumCaliber22LR = 2,
         -- Type
         --  - Reduce or Remove Weapons based on Type / Caliber Ammunition
         --  - This will affect associated Items and Ammo
@@ -1618,7 +1618,7 @@ SandboxVars = {
         -- 8 = 70%
         -- 9 = 80%
         -- 10 = 90%
-        EnumCaliber177BB = 6,
+        EnumCaliber177BB = 2,
         -- Parts
         --  - Reduce or Remove Suppressor Attachments
         --  - This only affects Container Spawn (Not Pre-Attached parts on Zombie Weapons)
@@ -2455,30 +2455,6 @@ SandboxVars = {
         -- Minimum=0.00 Maximum=1.00 Default=0.10
         WarmthGain = 0.1,
     },
-    Casualoid = {
-        -- 50 means 50%, which means every action will be 50% faster, if you use 100% actions will be instantaneous, if you use 0% they won't be speed up Minimum=0 Maximum=100 Default=50
-        FasterActionsModifier = 50,
-        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
-        WoodWeightModifier = 40,
-        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
-        MetalWeightModifier = 40,
-        -- Select a trait to disable it
-        MultiSelectDisablePositiveTraits = "Nutritionist;Herbalist;",
-        -- Select a trait to disable it
-        MultiSelectDisableNegativeTraits = "",
-        CanCraftStorageUpgrade = true,
-        -- Minimum=10 Maximum=100 Default=30
-        StorageUpgradeBaseWeight = 30,
-        -- Sets by wich number the base weight is multiplied every time a storage upgrade is improved Minimum=2.10 Maximum=10.00 Default=2.10
-        StorageImprovementMultiplier = 2.1,
-        -- If enabled, crops rotting will never rot. Except for over-fertilizing, over-fertilizing will still kill your plant
-        DisableCropsRotting = true,
-        EnableRespawn = true,
-        -- Minimum=0 Maximum=100 Default=100
-        XPKeptOnRespawn = 95,
-        -- Minimum=0 Maximum=100 Default=75
-        XPKeptByLowerXPTrait = 75,
-    },
     CommonSense = {
         -- Toggles whether Players can pry open doors, windows, etc. using a Crowbar. 
         PryingMechanic = true,
@@ -3243,5 +3219,99 @@ SandboxVars = {
         RotateModelISAllowedForWhiteListedOnly = false,
         -- At the moment it doesn't work well, if you want to change the weight of the avatars, copy the itemTweaker code visible from the client mod folder, you will have to rewrite it with the desired value while waiting for the fix. Minimum=0 Maximum=9999 Default=10
         AvatarWeightFromItemTweaker = 10,
+    },
+    Casualoid = {
+        -- 50 means 50%, which means every action will be 50% faster, if you use 100% actions will be instantaneous, if you use 0% they won't be speed up Minimum=0 Maximum=100 Default=50
+        FasterActionsModifier = 50,
+        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
+        WoodWeightModifier = 40,
+        -- 50 means 50%, which means every action will be 50% lighter, if you use 100% items will have have no weight, if you use 0% it won't change Minimum=0 Maximum=100 Default=40
+        MetalWeightModifier = 40,
+        -- Select a trait to disable it
+        MultiSelectDisablePositiveTraits = "Nutritionist;Herbalist;",
+        -- Select a trait to disable it
+        MultiSelectDisableNegativeTraits = "",
+        CanCraftStorageUpgrade = true,
+        -- Minimum=10 Maximum=100 Default=30
+        StorageUpgradeBaseWeight = 30,
+        -- Sets by wich number the base weight is multiplied every time a storage upgrade is improved Minimum=2.10 Maximum=10.00 Default=2.10
+        StorageImprovementMultiplier = 2.1,
+        -- If enabled, crops rotting will never rot. Except for over-fertilizing, over-fertilizing will still kill your plant
+        DisableCropsRotting = true,
+        EnableRespawn = true,
+        -- Minimum=0 Maximum=100 Default=100
+        XPKeptOnRespawn = 95,
+        -- Minimum=0 Maximum=100 Default=75
+        XPKeptByLowerXPTrait = 75,
+    },
+    CF8KSweeper = {
+        AllowTiles = true,
+        -- You can list exact sprite names or the start of tilepacks. Separate them with ;
+        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
+        AllowBlood = true,
+        AllowGrime = true,
+        AllowAshes = true,
+        AllowItems = true,
+        AllowCorpses = true,
+    },
+    AutoGate = {
+        -- Everytime the gate is closed by a controller, it will also be locked.
+        AutoLockGate = true,
+        -- Max range that a controller can interact with the gate. Minimum=8 Maximum=50 Default=35
+        ControllerRange = 35,
+        -- Total uses each battery can have. Minimum=10 Maximum=300 Default=100
+        BatteryMaxUseCount = 100,
+        -- Level of Metalworking required to install gate motor. Minimum=1 Maximum=10 Default=4
+        LevelRequirementsInstallMetalWelding = 4,
+        -- Level of Electrical required to interact with the controller. Minimum=1 Maximum=10 Default=1
+        LevelRequirementsControllerInteraction = 1,
+        -- Level of Mechanics required to interact with the gate. Minimum=1 Maximum=10 Default=1
+        LevelRequirementsGateInteraction = 1,
+        -- Level of Electrical required to make controllers. (needs restart) Minimum=1 Maximum=10 Default=2
+        LevelRequirementsMakeControllerElectrical = 2,
+        -- Level of Electrical required to make a gate motors. (needs restart) Minimum=1 Maximum=10 Default=3
+        LevelRequirementsMakeComponentsElectrical = 3,
+        -- Level of Mechanics required to make a gate motors. (needs restart) Minimum=1 Maximum=10 Default=4
+        LevelRequirementsMakeComponentsMechanics = 4,
+    },
+    Nipswitch = {
+        -- <RGB:232,209,0>1 page = instant   12 pages = 1 minute   120 pages = 10 minutes (Default Sandbox speed)  Multiply minutes by your server Sandbox read speed to get your # of mins per 12 pages</RGB>  Minimum=1 Maximum=3000 Default=500
+        Pagelength = 500,
+        -- <RGB:232,209,0>Level of Electrical required to read Book Minimum=0 Maximum=10 Default=6
+        Booklevel = 6,
+        -- <RGB:232,209,0>Spawns in:  Bookstore Stationary  Library counter  Living Room shelf  Residential office desk  Bedroom side table  Default=Rare
+        -- 1 = Very Rare
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = EVERYWHERE
+        Bookchanceplace = 2,
+        -- <RGB:232,209,0>Spawns in downed Zombie bodies. Default=Very Rare
+        -- 1 = Very Rare
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = EVERYWHERE
+        Bookchancezombie = 1,
+        -- <RGB:232,209,0>Electrical Level required to Remove/Replace Lightbulb from switches in world Minimum=0 Maximum=10 Default=4
+        Bulblevel = 4,
+        -- <RGB:232,209,0>Level required to place/pick Switches in world Minimum=1 Maximum=10 Default=6
+        Movelevel = 6,
+        -- <RGB:232,209,0>Level 5 is PZ Hardcoded Minimum Electrical level to add Battery Minimum=5 Maximum=10 Default=8
+        Batterylevel = 8,
+        -- <RGB:232,209,0>If you check box, you will disable removing bulbs from Light Switches (Ignores Bulb Level Value)
+        Bulbdisabled = false,
+        -- <RGB:232,209,0>If you check box, players can't pickup Light Switches (Ignores Move Level Value)
+        Movedisabled = false,
+        -- <RGB:232,209,0>If you check box, you can't attach battery connectors to Light Switches (Ignores Battery Level Value)
+        Batterydisabled = false,
+        -- <RGB:232,209,0>How many Wire required to craft Minimum=1 Maximum=1000 Default=10
+        Craftwire = 10,
+        -- <RGB:232,209,0>How many Scrap Electronics required to craft Minimum=1 Maximum=1000 Default=50
+        CraftElectronicsScrap = 50,
+        -- <RGB:232,209,0>How many units of Duct Tape required to craft Minimum=1 Maximum=1000 Default=4
+        Craftducttape = 4,
+        -- <RGB:232,209,0>How Many Screws required to craft Minimum=1 Maximum=1000 Default=10
+        Craftscrews = 10,
     },
 }
